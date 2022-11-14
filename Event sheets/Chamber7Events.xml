@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Chamber7Events</name>
+    <events>
+        <include>Controls</include>
+        <event-block sid="3208465190982317">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="2102087749426452" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="8921016632999532" type="System">
+                    <param id="0" name="Variable">ChamberNumber</param>
+                    <param id="1" name="Value">7</param>
+                </action>
+                <action id="-36" name="Save" sid="3884351286639991" type="System">
+                    <param id="0" name="Slot">&quot;savefile1&quot;</param>
+                </action>
+                <action behavior="Platform" id="0" name="Set ignoring input" sid="2707097860673233" type="WaffleLover">
+                    <param id="0" name="Input">1</param>
+                </action>
+                <action id="0" name="Play" sid="1018793494223808" type="Audio">
+                    <param id="0" name="Audio file">Casino Night Sonic 2 Beta</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">-10</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="5259321741791459" type="System">
+                    <param id="0" name="Seconds">3.0</param>
+                </action>
+                <action id="4" name="Set animation" sid="3617266560993873" type="FadeEffect">
+                    <param id="0" name="Animation">&quot;FadeOut&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action behavior="Fade" id="1" name="Start fade" sid="9673578217517921" type="Chamber_text" />
+                <action behavior="Fade" id="1" name="Start fade" sid="1564462611166444" type="ChamberNumber" />
+                <action id="-16" name="Wait" sid="9222021689085772" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action behavior="Platform" id="0" name="Set ignoring input" sid="8502027648965768" type="WaffleLover">
+                    <param id="0" name="Input">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3831468143588487">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="8325696163794029" type="WaffleLover">
+                    <param id="0" name="Object">MetalRampTrigger1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="7553166307279324" type="MetalRamp">
+                    <param id="0" name="Instance variable">active</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7170220171372593">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="8792764782080936" type="WaffleLover">
+                    <param id="0" name="Object">MetalRampTrigger2</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="5502707918644246" type="MetalRamp">
+                    <param id="0" name="Instance variable">active</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Solid" id="0" name="Set enabled" sid="7654361357481452" type="MetalRamp">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9504583836640307">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="2824855233465181" type="System" />
+            </conditions>
+            <actions />
+        </event-block>
+    </events>
+</c2eventsheet>

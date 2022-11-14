@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Chamber15Events</name>
+    <events>
+        <include>Controls</include>
+        <event-block sid="8074721565532976">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="7876858289742562" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="8266431462602633" type="System">
+                    <param id="0" name="Variable">ChamberNumber</param>
+                    <param id="1" name="Value">15</param>
+                </action>
+                <action id="-36" name="Save" sid="6863263775896929" type="System">
+                    <param id="0" name="Slot">&quot;savefile1&quot;</param>
+                </action>
+                <action behavior="Platform" id="0" name="Set ignoring input" sid="1754866519324445" type="WaffleLover">
+                    <param id="0" name="Input">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="8812336680532315" type="System">
+                    <param id="0" name="Seconds">3.0</param>
+                </action>
+                <action id="4" name="Set animation" sid="8539558107864259" type="FadeEffect">
+                    <param id="0" name="Animation">&quot;FadeOut&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action behavior="Fade" id="1" name="Start fade" sid="3644662841361944" type="Chamber_text" />
+                <action behavior="Fade" id="1" name="Start fade" sid="5075745180259138" type="ChamberNumber" />
+                <action id="-16" name="Wait" sid="1578574476517095" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action behavior="Platform" id="0" name="Set ignoring input" sid="8471793389107566" type="WaffleLover">
+                    <param id="0" name="Input">0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

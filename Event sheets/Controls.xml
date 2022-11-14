@@ -1,0 +1,2117 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Controls</name>
+    <events>
+        <variable constant="0" name="Score" sid="8072957563970957" static="0" type="number">0</variable>
+        <variable constant="0" name="ChamberNumber" sid="1505424793473796" static="0" type="number">1</variable>
+        <event-group description="I&apos;m pretty sure the title of the event is self explanatory" sid="5865475426608274" title="Basic Controls">
+            <sub-events>
+                <event-block sid="742301950753639">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="625612212032797" type="Keyboard">
+                            <param id="0" name="Key">65 (A)</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="1973275999291533" type="WaffleLover">
+                            <param id="0" name="Instance variable">CutsceneMode</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set mirrored" sid="8407588216652881" type="WaffleLover">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action id="7" name="Set mirrored" sid="6693612167554004" type="WaffleLover_ItemMask">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="3563202730962736" type="WaffleLover">
+                            <param id="0" name="Control">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2879375795832888">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="2754553222844449" type="Keyboard">
+                            <param id="0" name="Key">68 (D)</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="1744229039402851" type="WaffleLover">
+                            <param id="0" name="Instance variable">CutsceneMode</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set mirrored" sid="7871276925391886" type="WaffleLover">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action id="7" name="Set mirrored" sid="9384266594170856" type="WaffleLover_ItemMask">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="303140445436701" type="WaffleLover">
+                            <param id="0" name="Control">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4337150541912894">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="1622684321024784" type="Keyboard">
+                            <param id="0" name="Key">75 (K)</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="1296036210469486" type="WaffleLover">
+                            <param id="0" name="Instance variable">CutsceneMode</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="2837963071470239" type="WaffleLover">
+                            <param id="0" name="Control">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1251662984473045">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="671839134053466" type="Keyboard">
+                            <param id="0" name="Key">83 (S)</param>
+                        </condition>
+                        <condition behavior="Platform" id="0" inverted="1" name="Is moving" sid="8029243210902577" type="WaffleLover" />
+                        <condition behavior="Platform" id="2" name="Is on floor" sid="2216192690662181" type="WaffleLover" />
+                        <condition id="-7" name="Compare instance variable" sid="1769565285663777" type="WaffleLover">
+                            <param id="0" name="Instance variable">CutsceneMode</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="5758821373525155" type="WaffleLover">
+                            <param id="0" name="Instance variable">SwordActive</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="4302558002838647" type="WaffleLover">
+                            <param id="0" name="Animation">&quot;Duck&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5837969974577237">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="7938991158222442" type="Keyboard">
+                            <param id="0" name="Key">74 (J)</param>
+                        </condition>
+                        <condition behavior="Platform" id="0" inverted="1" name="Is moving" sid="2870342603296298" type="WaffleLover" />
+                        <condition behavior="Platform" id="2" name="Is on floor" sid="5099033699403288" type="WaffleLover" />
+                        <condition id="-7" name="Compare instance variable" sid="505906376539981" type="WaffleLover">
+                            <param id="0" name="Instance variable">IsSliding</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="8754506235747378" type="WaffleLover">
+                            <param id="0" name="Instance variable">CutsceneMode</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="2668185341700982" type="WaffleLover">
+                            <param id="0" name="Instance variable">SwordActive</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="9017041609106223">
+                            <conditions>
+                                <condition id="7" name="Is mirrored" sid="7645408387238906" type="WaffleLover" />
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="5542629142037166" type="WaffleLover">
+                                    <param id="0" name="Instance variable">IsSliding</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action behavior="Platform" id="0" name="Set ignoring input" sid="7063268270626199" type="WaffleLover">
+                                    <param id="0" name="Input">1</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="641790545226349" type="WaffleLover">
+                                    <param id="0" name="Animation">&quot;Slide&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action behavior="Platform" id="8" name="Set vector X" sid="4005225813211324" type="WaffleLover">
+                                    <param id="0" name="Vector X">-2000</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="824724523245491" type="System">
+                                    <param id="0" name="Seconds">0.1</param>
+                                </action>
+                                <action behavior="Platform" id="8" name="Set vector X" sid="5325182227958596" type="WaffleLover">
+                                    <param id="0" name="Vector X">-2000</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="8962887217631858" type="System">
+                                    <param id="0" name="Seconds">0.2</param>
+                                </action>
+                                <action behavior="Platform" id="8" name="Set vector X" sid="7101189479081468" type="WaffleLover">
+                                    <param id="0" name="Vector X">-2000</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="5463325832012621" type="System">
+                                    <param id="0" name="Seconds">1.0</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="4196805234880613" type="WaffleLover">
+                                    <param id="0" name="Instance variable">IsSliding</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action behavior="Platform" id="0" name="Set ignoring input" sid="179991087741709" type="WaffleLover">
+                                    <param id="0" name="Input">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="3246311013657432">
+                            <conditions>
+                                <condition id="7" inverted="1" name="Is mirrored" sid="9345067598171976" type="WaffleLover" />
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="8403313257895837" type="WaffleLover">
+                                    <param id="0" name="Instance variable">IsSliding</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action behavior="Platform" id="0" name="Set ignoring input" sid="866790421492198" type="WaffleLover">
+                                    <param id="0" name="Input">1</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="1055643309275731" type="WaffleLover">
+                                    <param id="0" name="Animation">&quot;Slide&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action behavior="Platform" id="8" name="Set vector X" sid="8255033982639478" type="WaffleLover">
+                                    <param id="0" name="Vector X">2000</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="5282832124461485" type="System">
+                                    <param id="0" name="Seconds">0.1</param>
+                                </action>
+                                <action behavior="Platform" id="8" name="Set vector X" sid="2098145626767476" type="WaffleLover">
+                                    <param id="0" name="Vector X">2000</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="8052495115748548" type="System">
+                                    <param id="0" name="Seconds">0.2</param>
+                                </action>
+                                <action behavior="Platform" id="8" name="Set vector X" sid="6330347668617471" type="WaffleLover">
+                                    <param id="0" name="Vector X">2000</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="7903955793684899" type="System">
+                                    <param id="0" name="Seconds">1.0</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="8711747501880857" type="WaffleLover">
+                                    <param id="0" name="Instance variable">IsSliding</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action behavior="Platform" id="0" name="Set ignoring input" sid="488813950054128" type="WaffleLover">
+                                    <param id="0" name="Input">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="4138066552402582">
+                    <conditions>
+                        <condition id="3" name="On key released" sid="8769422229665818" type="Keyboard">
+                            <param id="0" name="Key">83 (S)</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="4717563756797045" type="WaffleLover">
+                            <param id="0" name="Instance variable">CutsceneMode</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="7171801969382538" type="WaffleLover">
+                            <param id="0" name="Animation">&quot;Idle&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="6240508964487253">
+            <conditions>
+                <condition behavior="Platform" id="5" name="On jump" sid="5431916490238347" type="WaffleLover" />
+                <condition id="-7" name="Compare instance variable" sid="6899644183464295" type="WaffleLover">
+                    <param id="0" name="Instance variable">SwordActive</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="7328183534064261" type="WaffleLover">
+                    <param id="0" name="Animation">&quot;Jump&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="0" name="Play" sid="77901948367166" type="Audio">
+                    <param id="0" name="Audio file">jumpsound</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7973169808201598">
+            <conditions>
+                <condition behavior="Platform" id="5" name="On jump" sid="7672146635790709" type="WaffleLover" />
+                <condition id="-7" name="Compare instance variable" sid="1909342482301686" type="WaffleLover">
+                    <param id="0" name="Instance variable">SwordActive</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="190282475480486" type="WaffleLover">
+                    <param id="0" name="Animation">&quot;Jump_Sword&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="3385250345648023" type="WaffleLover_ItemMask">
+                    <param id="0" name="Animation">&quot;Sword_Jump&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="0" name="Play" sid="164030765444647" type="Audio">
+                    <param id="0" name="Audio file">jumpsound</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4743033228586356">
+            <conditions>
+                <condition behavior="Platform" id="0" name="Is moving" sid="874578145898005" type="WaffleLover" />
+                <condition behavior="Platform" id="2" name="Is on floor" sid="2318624692720796" type="WaffleLover" />
+                <condition id="-7" name="Compare instance variable" sid="4591182468639913" type="WaffleLover">
+                    <param id="0" name="Instance variable">IsSliding</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="6444350791760174" type="WaffleLover">
+                    <param id="0" name="Instance variable">SwordActive</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="5411439875510622" type="WaffleLover">
+                    <param id="0" name="Animation">&quot;Run&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8631419614501805">
+            <conditions>
+                <condition behavior="Platform" id="0" name="Is moving" sid="1765671564778265" type="WaffleLover" />
+                <condition behavior="Platform" id="2" name="Is on floor" sid="3718649323329526" type="WaffleLover" />
+                <condition id="-7" name="Compare instance variable" sid="3259933445695176" type="WaffleLover">
+                    <param id="0" name="Instance variable">IsSliding</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="1876160717417884" type="WaffleLover">
+                    <param id="0" name="Instance variable">SwordActive</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="3111081711617863" type="WaffleLover">
+                    <param id="0" name="Animation">&quot;Run&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="1273094942450092" type="WaffleLover_ItemMask">
+                    <param id="0" name="Animation">&quot;Sword_Run&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5681596702566525">
+            <conditions>
+                <condition behavior="Platform" id="7" name="On stopped" sid="3715548132403255" type="WaffleLover" />
+                <condition id="-7" name="Compare instance variable" sid="4432939974557369" type="WaffleLover">
+                    <param id="0" name="Instance variable">SwordActive</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="5214932744056942" type="WaffleLover">
+                    <param id="0" name="Animation">&quot;Idle&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6352255613244143">
+            <conditions>
+                <condition behavior="Platform" id="7" name="On stopped" sid="8677281229565109" type="WaffleLover" />
+                <condition id="-7" name="Compare instance variable" sid="5745181865261925" type="WaffleLover">
+                    <param id="0" name="Instance variable">SwordActive</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="5997437850088064" type="WaffleLover">
+                    <param id="0" name="Animation">&quot;Idle_Sword&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="9697653388091839" type="WaffleLover_ItemMask">
+                    <param id="0" name="Animation">&quot;Sword_Idle&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3228645738188098">
+            <conditions>
+                <condition behavior="Platform" id="9" name="On landed" sid="9757701577759161" type="WaffleLover" />
+                <condition id="-7" name="Compare instance variable" sid="7595175834420419" type="WaffleLover">
+                    <param id="0" name="Instance variable">SwordActive</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="2723798045858339" type="WaffleLover">
+                    <param id="0" name="Animation">&quot;Idle&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6323744403821554">
+            <conditions>
+                <condition behavior="Platform" id="9" name="On landed" sid="2099758201435394" type="WaffleLover" />
+                <condition id="-7" name="Compare instance variable" sid="2272379831273935" type="WaffleLover">
+                    <param id="0" name="Instance variable">SwordActive</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="3192625749107305" type="WaffleLover">
+                    <param id="0" name="Animation">&quot;Idle_Sword&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="3547031820867003" type="WaffleLover_ItemMask">
+                    <param id="0" name="Animation">&quot;Sword_Idle&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="Stuff like equipping weapons and some other shit" sid="9156337231567933" title="Advanced Controls">
+            <sub-events>
+                <event-block sid="2579513075310274">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="9366028971616736" type="System" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="7789899304001145" type="WaffleLover_ItemMask">
+                            <param id="0" name="Pin to">WaffleLover</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4812788364747886">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="2911533717145649" type="Keyboard">
+                            <param id="0" name="Key">76 (L)</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="8494901315102596" type="WaffleLover">
+                            <param id="0" name="Instance variable">SwordActive</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="8660147596375203" type="WaffleLover">
+                            <param id="0" name="Instance variable">IsSliding</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="470932952803798" type="System">
+                            <param id="0" name="Seconds">0.2</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="9197824483838997" type="WaffleLover">
+                            <param id="0" name="Instance variable">SwordActive</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="9789794262880831" type="HealthBar_Item">
+                            <param id="0" name="Animation">&quot;Sword&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1724953125594483">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="9001252809781837" type="Keyboard">
+                            <param id="0" name="Key">76 (L)</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="7017710154892606" type="WaffleLover">
+                            <param id="0" name="Instance variable">SwordActive</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="5613216061533699" type="WaffleLover">
+                            <param id="0" name="Instance variable">IsSliding</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="6975553117339042" type="System">
+                            <param id="0" name="Seconds">0.2</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="5527931810733274" type="WaffleLover">
+                            <param id="0" name="Instance variable">SwordActive</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="389566208177024" type="WaffleLover_ItemMask">
+                            <param id="0" name="Animation">&quot;Idle&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="6741271623498427" type="HealthBar_Item">
+                            <param id="0" name="Animation">&quot;Empty&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8942602594504516">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="3139690355184836" type="Keyboard">
+                            <param id="0" name="Key">74 (J)</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="2430877647939248" type="WaffleLover">
+                            <param id="0" name="Instance variable">SwordActive</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition behavior="Platform" id="0" inverted="1" name="Is moving" sid="2055931143129523" type="WaffleLover" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="9116731152514999" type="WaffleLover">
+                            <param id="0" name="Animation">&quot;Attack_Sword&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="2979644544517108" type="WaffleLover_ItemMask">
+                            <param id="0" name="Animation">&quot;Sword_Attack&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="8937562484089437" type="WaffleLover">
+                            <param id="0" name="Instance variable">IsAttacking</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4397051700428004">
+                    <conditions>
+                        <condition id="4" name="On finished" sid="3341338732290892" type="WaffleLover">
+                            <param id="0" name="Animation">&quot;Attack_Sword&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="503250263774511" type="WaffleLover">
+                            <param id="0" name="Animation">&quot;Idle_Sword&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="5025822445803997" type="WaffleLover_ItemMask">
+                            <param id="0" name="Animation">&quot;Sword_Idle&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="5387953353597757" type="WaffleLover">
+                            <param id="0" name="Instance variable">IsAttacking</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6032657921279787">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="9851042096160731" type="WaffleLover">
+                            <param id="0" name="Instance variable">IsAttacking</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="9771577613425561" type="WaffleLover_ItemMask">
+                            <param id="0" name="Object">Mech</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Subtract from" sid="1245485749439515" type="Mech">
+                            <param id="0" name="Instance variable">Health</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="The Health system." sid="4283155934938709" title="Health">
+            <sub-events>
+                <event-block sid="973531840281953">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="6764241404408843" type="WaffleLover">
+                            <param id="0" name="Instance variable">Health</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="7700027098499043" type="HealthBar">
+                            <param id="0" name="Animation">&quot;Full&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2182776090662765">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="8903945112994288" type="WaffleLover">
+                            <param id="0" name="Instance variable">Health</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="3480640342434179" type="HealthBar">
+                            <param id="0" name="Animation">&quot;FiveHP&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7388948153343312">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="2283167724544876" type="WaffleLover">
+                            <param id="0" name="Instance variable">Health</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="4499230579878028" type="HealthBar">
+                            <param id="0" name="Animation">&quot;FourHP&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2367194223761732">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="7735358992152861" type="WaffleLover">
+                            <param id="0" name="Instance variable">Health</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="7371627236173628" type="HealthBar">
+                            <param id="0" name="Animation">&quot;Half&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3095657034558888">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="952092664764054" type="WaffleLover">
+                            <param id="0" name="Instance variable">Health</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="529338607561368" type="HealthBar">
+                            <param id="0" name="Animation">&quot;TwoHP&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="490133619456608">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="4614694374864214" type="WaffleLover">
+                            <param id="0" name="Instance variable">Health</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="2401431893328376" type="HealthBar">
+                            <param id="0" name="Animation">&quot;OneHP&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8225616219557456">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="7177914654639362" type="WaffleLover">
+                            <param id="0" name="Instance variable">Health</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="ScrollTo" id="1" name="Set enabled" sid="4917966367386561" type="WaffleLover">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="3147322319477485" type="WaffleLover">
+                            <param id="0" name="Instance variable">Health</param>
+                            <param id="1" name="Value">-1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="4432916600876329" type="HealthBar">
+                            <param id="0" name="Animation">&quot;Empty&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="623561492290536" type="Audio">
+                            <param id="0" name="Audio file">Death</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="4344868888185446" type="WaffleLover">
+                            <param id="0" name="Animation">&quot;Death&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action behavior="Solid" id="0" name="Set enabled" sid="4810878192143933" type="MetalTilemap">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action behavior="Solid" id="0" name="Set enabled" sid="9513291233591488" type="GrassTilemap">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action behavior="Solid" id="0" name="Set enabled" sid="1957996635168579" type="ChristmasTilemap">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action behavior="Solid" id="0" name="Set enabled" sid="974637067189821" type="Metal2Tilemap">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action behavior="Solid" id="0" name="Set enabled" sid="7266129301978646" type="Metal3Tilemap">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action behavior="Solid" id="0" name="Set enabled" sid="934749902274068" type="Metal4Tilemap">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action behavior="Solid" id="0" name="Set enabled" sid="5945649126987647" type="Metal4TilemapG">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action behavior="Solid" id="0" name="Set enabled" sid="469131069891855" type="Metal_darkTilemap">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action behavior="Solid" id="0" name="Set enabled" sid="5125460816313417" type="MovingPlatform">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action behavior="Solid" id="0" name="Set enabled" sid="1891441873268241" type="MovingPlatform_manuel">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action behavior="Solid" id="0" name="Set enabled" sid="695251923339824" type="LockedDoor_Green_Ceiling">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action behavior="Solid" id="0" name="Set enabled" sid="6430065366056346" type="TestLevel_tilemap">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action behavior="Solid" id="0" name="Set enabled" sid="7653610140918167" type="DeathBlock">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="9062217656190854" type="DeathBlock">
+                            <param id="0" name="Instance variable">Active</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action behavior="Platform" id="0" name="Set ignoring input" sid="1583181800541321" type="WaffleLover">
+                            <param id="0" name="Input">1</param>
+                        </action>
+                        <action behavior="Platform" id="9" name="Set vector Y" sid="1190325860808725" type="WaffleLover">
+                            <param id="0" name="Vector Y">-750</param>
+                        </action>
+                        <action behavior="Rotate" id="1" name="Set acceleration" sid="6458981743008189" type="WaffleLover">
+                            <param id="0" name="Acceleration">180</param>
+                        </action>
+                        <action behavior="Rotate" id="0" name="Set speed" sid="6631515960437522" type="WaffleLover">
+                            <param id="0" name="Speed">180</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="4300649300947847" type="System">
+                            <param id="0" name="Seconds">2.0</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="9106117463208071" type="FadeEffect">
+                            <param id="0" name="Animation">&quot;FadeIn&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="9907217711117746" type="System">
+                            <param id="0" name="Seconds">0.5</param>
+                        </action>
+                        <action id="-26" name="Restart layout" sid="9428271864244011" type="System" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="The events of the large lazar." sid="5099593347426674" title="Lazer_large">
+            <sub-events>
+                <event-block sid="7510873477578379">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="3323050933462197" type="System">
+                            <param id="0" name="Interval (seconds)">3.0</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="5099645297015199" type="Lazer_large">
+                            <param id="0" name="Instance variable">Active</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-3" name="Is on-screen" sid="8577885930377827" type="Lazer_large" />
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="6434756196396303" type="Lazer_large">
+                            <param id="0" name="Instance variable">Active</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="8522699985477513" type="Lazer_large">
+                            <param id="0" name="Animation">&quot;Active&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="6459740293526747" type="Audio">
+                            <param id="0" name="Audio file">Lazer</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2542345318923342">
+                    <conditions>
+                        <condition id="4" name="On finished" sid="8686585446084618" type="Lazer_large">
+                            <param id="0" name="Animation">&quot;Active&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="2031649872028302" type="Lazer_large">
+                            <param id="0" name="Instance variable">Active</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3472741706304246">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="6259133657893475" type="WaffleLover">
+                            <param id="0" name="Object">Lazer_large</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="3342904289520774" type="Lazer_large">
+                            <param id="0" name="Instance variable">Active</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition behavior="Flash" id="0" inverted="1" name="Is flashing" sid="1581931878262315" type="WaffleLover" />
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Subtract from" sid="4721206517827773" type="WaffleLover">
+                            <param id="0" name="Instance variable">Health</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="3504265402100424" type="Audio">
+                            <param id="0" name="Audio file">Hit</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action behavior="Flash" id="0" name="Flash" sid="8767152234684667" type="WaffleLover">
+                            <param id="0" name="&apos;On&apos; time">0.1</param>
+                            <param id="1" name="&apos;Off&apos; time">0.1</param>
+                            <param id="2" name="Duration">2.0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8524663177445519">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="1433836177361631" type="WaffleLover">
+                            <param id="0" name="Object">Lazar_large_moving</param>
+                        </condition>
+                        <condition behavior="Flash" id="0" inverted="1" name="Is flashing" sid="3830299600527529" type="WaffleLover" />
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Subtract from" sid="6519568323028779" type="WaffleLover">
+                            <param id="0" name="Instance variable">Health</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="2519758430258807" type="Audio">
+                            <param id="0" name="Audio file">Hit</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action behavior="Flash" id="0" name="Flash" sid="1570906387972777" type="WaffleLover">
+                            <param id="0" name="&apos;On&apos; time">0.1</param>
+                            <param id="1" name="&apos;Off&apos; time">0.1</param>
+                            <param id="2" name="Duration">2.0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="9040727564351707">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="1639884438458514" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="4730585004308286" type="ChamberNumber">
+                    <param id="0" name="Text">ChamberNumber</param>
+                </action>
+                <action id="0" name="Set text" sid="6387624343191974" type="FPStext">
+                    <param id="0" name="Text">fps</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2441003933844553">
+            <conditions>
+                <condition id="3" name="On key released" sid="6574251715400877" type="Keyboard">
+                    <param id="0" name="Key">80 (P)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="2896431273428968" type="System">
+                    <param id="0" name="Variable">ChamberNumber</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description='The events for the &quot;Glider&quot; object seen in most levels' sid="2673350295982326" title="Glider">
+            <sub-events>
+                <event-block sid="3958011170089799">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="8164652716535516" type="WaffleLover">
+                            <param id="0" name="Object">Glider</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="5028401986793169" type="Glider">
+                            <param id="0" name="Instance variable">IsActive</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="4403182973185734" type="WaffleLover">
+                            <param id="0" name="Instance variable">SwordActive</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="6350796765895257" type="Glider">
+                            <param id="0" name="Pin to">WaffleLover</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="4106250219312816" type="Glider">
+                            <param id="0" name="Instance variable">IsActive</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="8130355220226089" type="WaffleLover">
+                            <param id="0" name="Animation">&quot;Hang&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="984727150078739" type="WaffleLover">
+                            <param id="0" name="X">Glider.X</param>
+                            <param id="1" name="Y">Glider.Y</param>
+                        </action>
+                        <action behavior="Platform" id="6" name="Set max fall speed" sid="5155751370424671" type="WaffleLover">
+                            <param id="0" name="Max fall speed">30</param>
+                        </action>
+                        <action behavior="Platform" id="2" name="Set acceleration" sid="7875909092677899" type="WaffleLover">
+                            <param id="0" name="Acceleration">800</param>
+                        </action>
+                        <action behavior="Platform" id="3" name="Set deceleration" sid="1966022250662887" type="WaffleLover">
+                            <param id="0" name="Deceleration">100</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6957776454555725">
+                    <conditions>
+                        <condition behavior="Platform" id="2" name="Is on floor" sid="9645677505875999" type="WaffleLover" />
+                        <condition id="-7" name="Compare instance variable" sid="3958610848440881" type="Glider">
+                            <param id="0" name="Instance variable">IsActive</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="3492164791018701" type="WaffleLover">
+                            <param id="0" name="Instance variable">AllowSlippery</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="2" name="Set acceleration" sid="7520372111803648" type="WaffleLover">
+                            <param id="0" name="Acceleration">420</param>
+                        </action>
+                        <action behavior="Platform" id="3" name="Set deceleration" sid="8439252915994465" type="WaffleLover">
+                            <param id="0" name="Deceleration">395</param>
+                        </action>
+                        <action behavior="Platform" id="6" name="Set max fall speed" sid="979952014383725" type="WaffleLover">
+                            <param id="0" name="Max fall speed">1500</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="8186580188810238" type="Glider">
+                            <param id="0" name="Instance variable">IsActive</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                        <action behavior="Pin" id="1" name="Unpin" sid="4039388631919807" type="Glider" />
+                        <action id="-8" name="Set angle" sid="4361597178956224" type="Glider">
+                            <param id="0" name="Angle">0</param>
+                        </action>
+                        <action behavior="Physics" id="27" name="Set enabled" sid="7606208444508752" type="Glider">
+                            <param id="0" name="Mode">1</param>
+                        </action>
+                        <action id="-8" name="Set angle" sid="718215770681496" type="WaffleLover">
+                            <param id="0" name="Angle">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9256767346738916">
+                    <conditions>
+                        <condition behavior="Platform" id="2" name="Is on floor" sid="2405754170156371" type="WaffleLover" />
+                        <condition id="-7" name="Compare instance variable" sid="9500271022500968" type="Glider">
+                            <param id="0" name="Instance variable">IsActive</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="7554009959935247" type="WaffleLover">
+                            <param id="0" name="Instance variable">AllowSlippery</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="2" name="Set acceleration" sid="8037515894494804" type="WaffleLover">
+                            <param id="0" name="Acceleration">2200</param>
+                        </action>
+                        <action behavior="Platform" id="3" name="Set deceleration" sid="5207079558404391" type="WaffleLover">
+                            <param id="0" name="Deceleration">50</param>
+                        </action>
+                        <action behavior="Platform" id="6" name="Set max fall speed" sid="6821825991131786" type="WaffleLover">
+                            <param id="0" name="Max fall speed">1500</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="1492977148414422" type="Glider">
+                            <param id="0" name="Instance variable">IsActive</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                        <action behavior="Pin" id="1" name="Unpin" sid="4969872250126682" type="Glider" />
+                        <action id="-8" name="Set angle" sid="628143090409522" type="Glider">
+                            <param id="0" name="Angle">0</param>
+                        </action>
+                        <action behavior="Physics" id="27" name="Set enabled" sid="8196465256182509" type="Glider">
+                            <param id="0" name="Mode">1</param>
+                        </action>
+                        <action id="-8" name="Set angle" sid="5740059172213354" type="WaffleLover">
+                            <param id="0" name="Angle">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9433652505102049">
+                    <conditions>
+                        <condition id="-3" inverted="1" name="Is on-screen" sid="6175118854423137" type="Glider" />
+                        <condition behavior="Physics" id="4" name="Is enabled" sid="8253780112102681" type="Glider" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="9437701025762213" type="Glider" />
+                        <action id="-10" name="Set value" sid="2331296886642567" type="Glider">
+                            <param id="0" name="Instance variable">IsActive</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action behavior="Physics" id="27" name="Set enabled" sid="744283210551719" type="Glider">
+                            <param id="0" name="Mode">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="828912243929209">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="2322034051217382" type="Keyboard">
+                            <param id="0" name="Key">65 (A)</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="4447688982629023" type="Glider">
+                            <param id="0" name="Instance variable">IsActive</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-20" name="Rotate toward angle" sid="8501156920779572" type="WaffleLover">
+                            <param id="0" name="Degrees">180</param>
+                            <param id="1" name="Angle">-10.795</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4769963243809843">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="1626299460624525" type="Keyboard">
+                            <param id="0" name="Key">68 (D)</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="1071438377733535" type="Glider">
+                            <param id="0" name="Instance variable">IsActive</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-20" name="Rotate toward angle" sid="2349713249757092" type="WaffleLover">
+                            <param id="0" name="Degrees">180</param>
+                            <param id="1" name="Angle">10.795</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="501252413483848">
+                    <conditions>
+                        <condition id="3" name="On key released" sid="8797083308560735" type="Keyboard">
+                            <param id="0" name="Key">65 (A)</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="4030005826160637" type="Glider">
+                            <param id="0" name="Instance variable">IsActive</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-8" name="Set angle" sid="2809635826083789" type="WaffleLover">
+                            <param id="0" name="Angle">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3481389490493337">
+                    <conditions>
+                        <condition id="3" name="On key released" sid="7691261551797324" type="Keyboard">
+                            <param id="0" name="Key">68 (D)</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="402741555220806" type="Glider">
+                            <param id="0" name="Instance variable">IsActive</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-8" name="Set angle" sid="9608513141952356" type="WaffleLover">
+                            <param id="0" name="Angle">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5218363561677113">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="1357776206239552" type="Keyboard">
+                            <param id="0" name="Key">83 (S)</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="222694110921525" type="Glider">
+                            <param id="0" name="Instance variable">IsActive</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="8554955372232869" type="WaffleLover">
+                            <param id="0" name="Instance variable">AllowSlippery</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="2" name="Set acceleration" sid="8105367862699384" type="WaffleLover">
+                            <param id="0" name="Acceleration">420</param>
+                        </action>
+                        <action behavior="Platform" id="3" name="Set deceleration" sid="7758418466639376" type="WaffleLover">
+                            <param id="0" name="Deceleration">395</param>
+                        </action>
+                        <action behavior="Platform" id="6" name="Set max fall speed" sid="1919101746633385" type="WaffleLover">
+                            <param id="0" name="Max fall speed">1500</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="1442580228456278" type="Glider">
+                            <param id="0" name="Instance variable">IsActive</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                        <action behavior="Pin" id="1" name="Unpin" sid="9548049385655827" type="Glider" />
+                        <action id="-8" name="Set angle" sid="7934610629644658" type="Glider">
+                            <param id="0" name="Angle">0</param>
+                        </action>
+                        <action behavior="Physics" id="27" name="Set enabled" sid="822032199689975" type="Glider">
+                            <param id="0" name="Mode">1</param>
+                        </action>
+                        <action id="-8" name="Set angle" sid="8384133203574614" type="WaffleLover">
+                            <param id="0" name="Angle">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="290429750056731">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="5859703208512086" type="Keyboard">
+                            <param id="0" name="Key">83 (S)</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="9252461258437268" type="Glider">
+                            <param id="0" name="Instance variable">IsActive</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="7263258914216792" type="WaffleLover">
+                            <param id="0" name="Instance variable">AllowSlippery</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="2" name="Set acceleration" sid="4358230034615786" type="WaffleLover">
+                            <param id="0" name="Acceleration">2200</param>
+                        </action>
+                        <action behavior="Platform" id="3" name="Set deceleration" sid="2008479903475653" type="WaffleLover">
+                            <param id="0" name="Deceleration">50</param>
+                        </action>
+                        <action behavior="Platform" id="6" name="Set max fall speed" sid="1780979582073934" type="WaffleLover">
+                            <param id="0" name="Max fall speed">1500</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="719576496598224" type="Glider">
+                            <param id="0" name="Instance variable">IsActive</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                        <action behavior="Pin" id="1" name="Unpin" sid="1200205134033853" type="Glider" />
+                        <action id="-8" name="Set angle" sid="4908440911876796" type="Glider">
+                            <param id="0" name="Angle">0</param>
+                        </action>
+                        <action behavior="Physics" id="27" name="Set enabled" sid="8698040632542553" type="Glider">
+                            <param id="0" name="Mode">1</param>
+                        </action>
+                        <action id="-8" name="Set angle" sid="6249963261277555" type="WaffleLover">
+                            <param id="0" name="Angle">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="2891108977125234">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="2920402825817715" type="WaffleLover">
+                    <param id="0" name="Object">DeathBlock</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="4940001024383524" type="DeathBlock">
+                    <param id="0" name="Instance variable">Active</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="9194901880988001" type="WaffleLover">
+                    <param id="0" name="Instance variable">Health</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="23113422134724">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="393230151911662" type="Keyboard">
+                    <param id="0" name="Key">16 (Shift)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="33" name="Stop all" sid="2085820128397011" type="Audio" />
+                <action id="-9" name="Set value" sid="1151412826840095" type="System">
+                    <param id="0" name="Variable">ChamberNumber</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="8004678028598024" type="System">
+                    <param id="0" name="Layout">TitleScreen</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="The WIP events for the Transporter object that is seen in the beginning in Chamber 3 and in other levels" sid="2055007220371462" title="Transporter">
+            <sub-events>
+                <event-block sid="9176959736636153">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="1100713240761363" type="WaffleLover">
+                            <param id="0" name="Object">Transporter</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="0" name="Set ignoring input" sid="4051670081517544" type="WaffleLover">
+                            <param id="0" name="Input">1</param>
+                        </action>
+                        <action behavior="Solid" id="0" name="Set enabled" sid="1740599559132445" type="MetalTilemap">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action behavior="Solid" id="0" name="Set enabled" sid="3775208793035156" type="Metal2Tilemap">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action behavior="Solid" id="0" name="Set enabled" sid="2881183329306365" type="TestLevel_tilemap">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action behavior="Solid" id="0" name="Set enabled" sid="3685592606255409" type="GrassTilemap">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action id="-25" name="Move to bottom" sid="4928736174863867" type="WaffleLover" />
+                        <action id="-25" name="Move to bottom" sid="2388814601481543" type="Metal2BGTilemap" />
+                        <action id="4" name="Set animation" sid="7558817318807629" type="WaffleLover">
+                            <param id="0" name="Animation">&quot;Rotate&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="9940584811184293" type="Transporter">
+                            <param id="0" name="Animation">&quot;Moving&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="1773306372835743" type="Transporter">
+                            <param id="0" name="Instance variable">MoveRight</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="9910765901123612" type="Audio">
+                            <param id="0" name="Audio file">Motor</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;transporter&quot;</param>
+                        </action>
+                        <action behavior="Solid" id="0" name="Set enabled" sid="8216880210624522" type="GrassSpecialTilemap">
+                            <param id="0" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4670242179212383">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="5353148026909516" type="System" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="9436267859850648">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="3900986007594664" type="Transporter">
+                                    <param id="0" name="Instance variable">MoveLeft</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="8Direction" id="7" name="Simulate control" sid="9567148575194272" type="Transporter">
+                                    <param id="0" name="Control">0</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="6893618369913761" type="WaffleLover">
+                                    <param id="0" name="Animation">&quot;Rotate&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="5451616734407934">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="1904101635387016" type="Transporter">
+                                    <param id="0" name="Instance variable">MoveRight</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="8Direction" id="7" name="Simulate control" sid="5455910274798514" type="Transporter">
+                                    <param id="0" name="Control">1</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="2226103585626508" type="WaffleLover">
+                                    <param id="0" name="Animation">&quot;Rotate&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="5895318426693914">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="9200439748530951" type="Transporter">
+                                    <param id="0" name="Instance variable">MoveUp</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="8Direction" id="7" name="Simulate control" sid="1491134527210099" type="Transporter">
+                                    <param id="0" name="Control">2</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="4796975238722127" type="WaffleLover">
+                                    <param id="0" name="Animation">&quot;Rotate&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="5467235438980632">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="2516757698471047" type="Transporter">
+                                    <param id="0" name="Instance variable">MoveDown</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="8Direction" id="7" name="Simulate control" sid="6545938914311838" type="Transporter">
+                                    <param id="0" name="Control">3</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="556466836050736" type="WaffleLover">
+                                    <param id="0" name="Animation">&quot;Rotate&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="5495567165890666">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="63264610856736" type="Transporter">
+                            <param id="0" name="Object">Transporter_moveupTrigger</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="2925071284813058" type="Transporter">
+                            <param id="0" name="Instance variable">MoveUp</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="6720305154810482" type="Transporter">
+                            <param id="0" name="Instance variable">MoveDown</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="1981809208681842" type="Transporter">
+                            <param id="0" name="Instance variable">MoveLeft</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="781094704894641" type="Transporter">
+                            <param id="0" name="Instance variable">MoveRight</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2693916053451288">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="5850142469336706" type="Transporter">
+                            <param id="0" name="Object">Transporter_movedownTrigger</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="9603546535185182" type="Transporter">
+                            <param id="0" name="Instance variable">MoveUp</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="6955640039960061" type="Transporter">
+                            <param id="0" name="Instance variable">MoveDown</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="1233850840437834" type="Transporter">
+                            <param id="0" name="Instance variable">MoveLeft</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="7906851767333369" type="Transporter">
+                            <param id="0" name="Instance variable">MoveRight</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5050973561249553">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="492754578565407" type="Transporter">
+                            <param id="0" name="Object">Transporter_moveleftTrigger</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="6963758991209934" type="Transporter">
+                            <param id="0" name="Instance variable">MoveUp</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="7228157986545147" type="Transporter">
+                            <param id="0" name="Instance variable">MoveDown</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="984176291272408" type="Transporter">
+                            <param id="0" name="Instance variable">MoveLeft</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="4367091814866373" type="Transporter">
+                            <param id="0" name="Instance variable">MoveRight</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="588171794711082">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="6741324970769893" type="Transporter">
+                            <param id="0" name="Object">Transporter_moverightTrigger</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="6596631491089289" type="Transporter">
+                            <param id="0" name="Instance variable">MoveUp</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="2123926304235181" type="Transporter">
+                            <param id="0" name="Instance variable">MoveDown</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="3186011246489959" type="Transporter">
+                            <param id="0" name="Instance variable">MoveLeft</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="7342004494785198" type="Transporter">
+                            <param id="0" name="Instance variable">MoveRight</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4825971506599987">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="2729673848039087" type="Transporter">
+                            <param id="0" name="Object">Transporter_stopTrigger</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="2864214081973975" type="Transporter">
+                            <param id="0" name="Instance variable">MoveUp</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="245950222681069" type="Transporter">
+                            <param id="0" name="Instance variable">MoveDown</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="5903097417884423" type="Transporter">
+                            <param id="0" name="Instance variable">MoveLeft</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="561251838417685" type="Transporter">
+                            <param id="0" name="Instance variable">MoveRight</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action behavior="Platform" id="0" name="Set ignoring input" sid="9915576177795318" type="WaffleLover">
+                            <param id="0" name="Input">0</param>
+                        </action>
+                        <action behavior="Solid" id="0" name="Set enabled" sid="2489954613249015" type="MetalTilemap">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action behavior="Solid" id="0" name="Set enabled" sid="1490247561534295" type="Metal2Tilemap">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action behavior="Solid" id="0" name="Set enabled" sid="8499986927584022" type="TestLevel_tilemap">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action behavior="Solid" id="0" name="Set enabled" sid="8186288118080692" type="GrassTilemap">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action behavior="Solid" id="0" name="Set enabled" sid="5387462262685735" type="GrassSpecialTilemap">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="8491651673706983" type="Transporter">
+                            <param id="0" name="Animation">&quot;Idle&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="6" name="Stop" sid="9755728065779207" type="Audio">
+                            <param id="0" name="Tag">&quot;transporter&quot;</param>
+                        </action>
+                        <action id="-24" name="Move to top" sid="4948796277231602" type="WaffleLover" />
+                        <action id="4" name="Set animation" sid="183638123192994" type="WaffleLover">
+                            <param id="0" name="Animation">&quot;Idle&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="6728373528068538">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="9146276698919723" type="Keyboard">
+                    <param id="0" name="Key">48 (0)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="8" name="Set silent" sid="6552410740645745" type="Audio">
+                    <param id="0" name="Mode">2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="9747092884699515" title="BouncePadEvents">
+            <sub-events>
+                <event-block sid="8645305735766133">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="7820740816547751" type="WaffleLover">
+                            <param id="0" name="Object">BouncePad</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="9" name="Set vector Y" sid="7813956868846182" type="WaffleLover">
+                            <param id="0" name="Vector Y">-BouncePad.BouncePower</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="5905450486037488" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action id="-11" name="Add to" sid="2728270128738075" type="BouncePad">
+                            <param id="0" name="Instance variable">BouncePower</param>
+                            <param id="1" name="Value">300</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="3598410528708759" type="BouncePad">
+                            <param id="0" name="Animation">&quot;Bounce&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="8933640172646127" type="BouncePad">
+                            <param id="0" name="Instance variable">Bounced</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="2606150171105489" type="WaffleLover">
+                            <param id="0" name="Animation">&quot;Run&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="1718838954445333" type="Audio">
+                            <param id="0" name="Audio file">BouncePad</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2075688124342297">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="7935110426797429" type="BouncePad">
+                            <param id="0" name="Instance variable">BouncePower</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">1200</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="9446454882322828" type="BouncePad">
+                            <param id="0" name="Instance variable">BouncePower</param>
+                            <param id="1" name="Value">1200</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7397520924878567">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="4817239190292024" type="BouncePad">
+                            <param id="0" name="Instance variable">Bounced</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
+                <event-block sid="7396148165672376">
+                    <conditions>
+                        <condition behavior="Platform" id="9" name="On landed" sid="4287696889041956" type="WaffleLover" />
+                        <condition id="-8" name="Is boolean instance variable set" sid="5217194216052063" type="BouncePad">
+                            <param id="0" name="Instance variable">Bounced</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-13" name="Set boolean" sid="2940303737939044" type="BouncePad">
+                            <param id="0" name="Instance variable">Bounced</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-8" name="Set angle" sid="4203861198351" type="WaffleLover">
+                            <param id="0" name="Angle">0</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="5830036841743887" type="BouncePad">
+                            <param id="0" name="Instance variable">BouncePower</param>
+                            <param id="1" name="Value">600</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="6857996594759342" title="LockedDoor">
+            <sub-events>
+                <event-block sid="7925743517766854">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="7366106482388883" type="WaffleLover">
+                            <param id="0" name="Object">LockedDoorButton_green_ceiling</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="7884003828469922" type="LockedDoor_Green_Ceiling" />
+                        <action id="-10" name="Add to" sid="2767061230130439" type="System">
+                            <param id="0" name="Variable">Score</param>
+                            <param id="1" name="Value">10</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="2758691009952409" type="System">
+                            <param id="0" name="Object to create">ScoreGot</param>
+                            <param id="1" name="Layer">&quot;Objects&quot;</param>
+                            <param id="2" name="X">WaffleLover.X</param>
+                            <param id="3" name="Y">WaffleLover.Y</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="769735374379383" type="ScoreGot">
+                            <param id="0" name="Animation">&quot;ten&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="3616246993989673" type="Audio">
+                            <param id="0" name="Audio file">Score</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" inactive="1" sid="94999741099277" title="CutsceneMode">
+            <sub-events>
+                <event-block sid="3174534511252234">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="1908037792503208" type="System" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="8469650779678979">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="4418717684272475" type="WaffleLover">
+                                    <param id="0" name="Instance variable">CutsceneMode</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="1500722084313087" type="WaffleLover">
+                                    <param id="0" name="Instance variable">MoveLeft</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="7" name="Simulate control" sid="7684056382350568" type="WaffleLover">
+                                    <param id="0" name="Control">0</param>
+                                </action>
+                                <action id="7" name="Set mirrored" sid="4712651249679991" type="WaffleLover">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="3837432393165958">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="7533262723944577" type="WaffleLover">
+                                    <param id="0" name="Instance variable">CutsceneMode</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="1110618278604622" type="WaffleLover">
+                                    <param id="0" name="Instance variable">MoveRight</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="7" name="Simulate control" sid="1829324608501628" type="WaffleLover">
+                                    <param id="0" name="Control">1</param>
+                                </action>
+                                <action id="7" name="Set mirrored" sid="2594476688201327" type="WaffleLover">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="5180710723555209">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="7854940089889849" type="WaffleLover">
+                                    <param id="0" name="Instance variable">Crouch</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition behavior="Platform" id="0" inverted="1" name="Is moving" sid="6196856664245875" type="WaffleLover" />
+                                <condition behavior="Platform" id="2" name="Is on floor" sid="9400700337623172" type="WaffleLover" />
+                                <condition id="-7" name="Compare instance variable" sid="6159594959766099" type="WaffleLover">
+                                    <param id="0" name="Instance variable">CutsceneMode</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="7886623113901132" type="WaffleLover">
+                                    <param id="0" name="Animation">&quot;Duck&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="9519693150667307">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="9659941347644193" type="WaffleLover">
+                                    <param id="0" name="Instance variable">Crouch</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                                <condition behavior="Platform" id="0" inverted="1" name="Is moving" sid="5685697666531886" type="WaffleLover" />
+                                <condition behavior="Platform" id="2" name="Is on floor" sid="9667979942198847" type="WaffleLover" />
+                                <condition id="-7" name="Compare instance variable" sid="3591243410052716" type="WaffleLover">
+                                    <param id="0" name="Instance variable">CutsceneMode</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="7279063566915334" type="WaffleLover">
+                                    <param id="0" name="Animation">&quot;Idle&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="2295134641083811">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="9105261952838738" type="WaffleLover">
+                            <param id="0" name="Object">WaffleLoverCutsceneTrigger_MoveRight</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="4083605958187436" type="WaffleLover">
+                            <param id="0" name="Instance variable">MoveLeft</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="8961597343651372" type="WaffleLover">
+                            <param id="0" name="Instance variable">MoveRight</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9484760808221702">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="4307158229814994" type="WaffleLover">
+                            <param id="0" name="Object">WaffleLoverCutsceneTrigger_MoveRight</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="7951950903852926" type="WaffleLover">
+                            <param id="0" name="Instance variable">MoveLeft</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="965099357204493" type="WaffleLover">
+                            <param id="0" name="Instance variable">MoveRight</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7764738080349858">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="2012670508047282" type="WaffleLover">
+                            <param id="0" name="Object">WaffleLoverCutsceneTrigger_Jump</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="4744100205352087" type="WaffleLover">
+                            <param id="0" name="Control">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5315173616000775">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="7871241214879835" type="WaffleLover">
+                            <param id="0" name="Object">WaffleLoverCutsceneTrrigger_Slide</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="3415591009548495" type="WaffleLover">
+                            <param id="0" name="Instance variable">CutsceneMode</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="8057774948810127" type="WaffleLover">
+                            <param id="0" name="Instance variable">MoveLeft</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="7706671048217618" type="WaffleLover">
+                            <param id="0" name="Instance variable">MoveRight</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="859214229567623" type="System">
+                            <param id="0" name="Seconds">1.0</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="5562004052724233">
+                            <conditions>
+                                <condition id="7" name="Is mirrored" sid="9442116709620463" type="WaffleLover" />
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="1914680078789166" type="WaffleLover">
+                                    <param id="0" name="Instance variable">IsSliding</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action behavior="Platform" id="0" name="Set ignoring input" sid="2006553921649664" type="WaffleLover">
+                                    <param id="0" name="Input">1</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="915448064853167" type="WaffleLover">
+                                    <param id="0" name="Animation">&quot;Slide&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action behavior="Platform" id="8" name="Set vector X" sid="9981383176854708" type="WaffleLover">
+                                    <param id="0" name="Vector X">-2000</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="7097069439044978" type="System">
+                                    <param id="0" name="Seconds">0.1</param>
+                                </action>
+                                <action behavior="Platform" id="8" name="Set vector X" sid="2755434056169434" type="WaffleLover">
+                                    <param id="0" name="Vector X">-2000</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="8412497040907726" type="System">
+                                    <param id="0" name="Seconds">0.2</param>
+                                </action>
+                                <action behavior="Platform" id="8" name="Set vector X" sid="9831730167976578" type="WaffleLover">
+                                    <param id="0" name="Vector X">-2000</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="7045527940291156" type="System">
+                                    <param id="0" name="Seconds">1.0</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="4901630116426114" type="WaffleLover">
+                                    <param id="0" name="Instance variable">IsSliding</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action behavior="Platform" id="0" name="Set ignoring input" sid="9597329080259731" type="WaffleLover">
+                                    <param id="0" name="Input">0</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="6706771269661106" type="WaffleLover">
+                                    <param id="0" name="Instance variable">MoveLeft</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="3004972289393183">
+                            <conditions>
+                                <condition id="7" inverted="1" name="Is mirrored" sid="5930009305388367" type="WaffleLover" />
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="1334188740366154" type="WaffleLover">
+                                    <param id="0" name="Instance variable">IsSliding</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action behavior="Platform" id="0" name="Set ignoring input" sid="8847302610274879" type="WaffleLover">
+                                    <param id="0" name="Input">1</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="1163433972704409" type="WaffleLover">
+                                    <param id="0" name="Animation">&quot;Slide&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action behavior="Platform" id="8" name="Set vector X" sid="1060458594627155" type="WaffleLover">
+                                    <param id="0" name="Vector X">2000</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="5034550187856896" type="System">
+                                    <param id="0" name="Seconds">0.1</param>
+                                </action>
+                                <action behavior="Platform" id="8" name="Set vector X" sid="289834273105947" type="WaffleLover">
+                                    <param id="0" name="Vector X">2000</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="2961643532567199" type="System">
+                                    <param id="0" name="Seconds">0.2</param>
+                                </action>
+                                <action behavior="Platform" id="8" name="Set vector X" sid="2836322382964386" type="WaffleLover">
+                                    <param id="0" name="Vector X">2000</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="8053593963489245" type="System">
+                                    <param id="0" name="Seconds">1.0</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="7566859062373204" type="WaffleLover">
+                                    <param id="0" name="Instance variable">IsSliding</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action behavior="Platform" id="0" name="Set ignoring input" sid="7155517870030159" type="WaffleLover">
+                                    <param id="0" name="Input">0</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="2922135570198787" type="WaffleLover">
+                                    <param id="0" name="Instance variable">MoveRight</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="1612854203648296">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="8744931053116013" type="WaffleLover">
+                    <param id="0" name="Instance variable">CutsceneMode</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-12" name="Set group active" sid="8974701204136585" type="System">
+                    <param id="0" name="Group name">&quot;CutsceneMode&quot;</param>
+                    <param id="1" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8192047815896141">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="6211003726689405" type="WaffleLover">
+                    <param id="0" name="Object">MovingPlatform_manuel</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="8077091545456322" type="MovingPlatform_manuel">
+                    <param id="0" name="Instance variable">Active</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1724709568519222">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="3637992317819366" type="System" />
+                <condition id="-7" name="Compare instance variable" sid="4230463666956322" type="MovingPlatform_manuel">
+                    <param id="0" name="Instance variable">Active</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="8Direction" id="7" name="Simulate control" sid="9923135787213362" type="MovingPlatform_manuel">
+                    <param id="0" name="Control">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="You know that one kid who sits in the purple machine all day and just chases you around? That&apos;s the Mech Guy thing" sid="5031213811423068" title="MechEvents">
+            <sub-events>
+                <event-block sid="1206207658486406">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="7639800248299329" type="System" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="3365522933553762">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="7391185318146667" type="Mech">
+                                    <param id="0" name="Instance variable">MoveLeft</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="7" name="Simulate control" sid="4676860455941113" type="Mech">
+                                    <param id="0" name="Control">0</param>
+                                </action>
+                                <action id="7" name="Set mirrored" sid="5240917762463653" type="Mech">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="7489570063788188">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="9236565446095745" type="Mech">
+                                    <param id="0" name="Instance variable">MoveRight</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="7" name="Simulate control" sid="4189872802659217" type="Mech">
+                                    <param id="0" name="Control">1</param>
+                                </action>
+                                <action id="7" name="Set mirrored" sid="7561670016444277" type="Mech">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="375840465951692">
+                    <conditions>
+                        <condition behavior="Platform" id="0" name="Is moving" sid="3923156889249723" type="Mech" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="6053511129281116" type="Mech">
+                            <param id="0" name="Animation">&quot;Walk&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4736938059502874">
+                    <conditions>
+                        <condition behavior="LineOfSight" id="0" name="Has LOS to object" sid="4736240710859217" type="Mech">
+                            <param id="0" name="Object">WaffleLover</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="2861288201772514" type="Mech">
+                            <param id="0" name="Instance variable">MoveLeft</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="4134055812974645" type="Mech">
+                            <param id="0" name="Instance variable">MoveRight</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2023450941008454">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="7247774737391948" type="WaffleLover">
+                            <param id="0" name="Object">Mech</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="6655262253293943" type="Mech">
+                            <param id="0" name="Instance variable">Health</param>
+                            <param id="1" name="Comparison">1</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="7929439210102175" type="WaffleLover">
+                            <param id="0" name="Instance variable">IsAttacking</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="8552310118143587" type="WaffleLover">
+                            <param id="0" name="Instance variable">IsSliding</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition behavior="Flash" id="0" inverted="1" name="Is flashing" sid="2573939404027368" type="WaffleLover" />
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Subtract from" sid="9821962552706874" type="WaffleLover">
+                            <param id="0" name="Instance variable">Health</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="2393498907834939" type="Audio">
+                            <param id="0" name="Audio file">Hit</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action behavior="Flash" id="0" name="Flash" sid="8130013890297423" type="WaffleLover">
+                            <param id="0" name="&apos;On&apos; time">0.1</param>
+                            <param id="1" name="&apos;Off&apos; time">0.1</param>
+                            <param id="2" name="Duration">2.0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1214261071833139">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="2461727450768995" type="Mech">
+                            <param id="0" name="Instance variable">Health</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="7627520287136701" type="Mech">
+                            <param id="0" name="Instance variable">Health</param>
+                            <param id="1" name="Value">-1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="2871228280264527" type="Mech">
+                            <param id="0" name="Animation">&quot;Death1&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action behavior="Platform" id="11" name="Set enabled" sid="8408718702320604" type="Mech">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action behavior="Physics" id="27" name="Set enabled" sid="2210707517111636" type="Mech">
+                            <param id="0" name="Mode">1</param>
+                        </action>
+                        <action behavior="Rotate" id="1" name="Set acceleration" sid="6622061165957143" type="Mech">
+                            <param id="0" name="Acceleration">180</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="8863854968854984" type="System">
+                            <param id="0" name="Seconds">3.0</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="3066091497789312" type="Mech" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="1487817341690044" title="Score">
+            <sub-events>
+                <event-block any="1" sid="5463171338285298">
+                    <conditions>
+                        <condition id="4" name="On finished" sid="6896568365659441" type="ScoreGot">
+                            <param id="0" name="Animation">&quot;ten&quot;</param>
+                        </condition>
+                        <condition id="4" name="On finished" sid="6157953564190994" type="ScoreGot">
+                            <param id="0" name="Animation">&quot;thousand&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="411150068837776" type="ScoreGot" />
+                    </actions>
+                </event-block>
+                <event-block sid="8926297272194962">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="6282950262555749" type="WaffleLover">
+                            <param id="0" name="Object">ExplorationScoreTrigger</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="4580282353905828" type="ExplorationScoreTrigger" />
+                        <action id="-3" name="Create object" sid="4834103151522174" type="System">
+                            <param id="0" name="Object to create">ScoreGot</param>
+                            <param id="1" name="Layer">&quot;Objects&quot;</param>
+                            <param id="2" name="X">WaffleLover.X</param>
+                            <param id="3" name="Y">WaffleLover.Y</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="4644399595008479" type="ScoreGot">
+                            <param id="0" name="Animation">&quot;thousand&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="4466433258131306" type="System">
+                            <param id="0" name="Variable">ChamberNumber</param>
+                            <param id="1" name="Value">1000</param>
+                        </action>
+                        <action id="0" name="Play" sid="6441035588164099" type="Audio">
+                            <param id="0" name="Audio file">Score</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

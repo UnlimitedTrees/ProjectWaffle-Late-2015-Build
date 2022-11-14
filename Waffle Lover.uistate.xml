@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2uistate>
+    <!--This is a UI state file - its content describes the user interface settings when the project was last open.
+It is entirely optional and the project will load without it.  If you are placing the project under source control,
+you probably do not want to add any .uistate.xml files to the repository.-->
+    <configurations>
+        <active>
+            <configuration name="HTML5" />
+        </active>
+        <display name="HTML5" />
+    </configurations>
+    <open-tabs>
+        <layout order="1">Chamber1</layout>
+        <layout active="1" order="3">Chamber2</layout>
+        <layout order="5">TitleScreen</layout>
+        <layout order="7">Chamber3</layout>
+        <layout order="9">ChamberSpecial1</layout>
+        <layout order="11">LevelSelect</layout>
+        <layout order="12">Chamber4</layout>
+        <layout order="14">Chamber7</layout>
+        <layout order="16">Chamber8</layout>
+        <layout order="18">Chamber6</layout>
+        <layout order="19">Chamber24</layout>
+        <layout order="22">Chamber23</layout>
+        <layout order="24">Chamber13</layout>
+        <layout order="25">Chamber24G</layout>
+        <layout order="27">Chamber14</layout>
+        <layout order="29">Chamber5</layout>
+        <layout order="31">Chamber9</layout>
+        <layout order="32">Chamber15</layout>
+        <layout order="36">MainMenu</layout>
+        <layout order="38">TestLevel</layout>
+        <layout order="41">Demo</layout>
+        <layout order="42">ChamberSpecial6</layout>
+        <event-sheet order="2">Chamber1Events</event-sheet>
+        <event-sheet order="4">Chamber2Events</event-sheet>
+        <event-sheet order="6">TitleEvents</event-sheet>
+        <event-sheet order="8">Chamber3Events</event-sheet>
+        <event-sheet order="10">ChamberSpecial1Events</event-sheet>
+        <event-sheet order="13">Chamber4Events</event-sheet>
+        <event-sheet order="15">Chamber7Events</event-sheet>
+        <event-sheet order="17">Chamber8Events</event-sheet>
+        <event-sheet order="20">Chamber24Events</event-sheet>
+        <event-sheet order="21">LevelSelectEvents</event-sheet>
+        <event-sheet order="23">Chamber23Events</event-sheet>
+        <event-sheet order="26">Chamber24GEvents</event-sheet>
+        <event-sheet order="28">Chamber14Events</event-sheet>
+        <event-sheet order="30">Chamber5Events</event-sheet>
+        <event-sheet order="33">Chamber15Events</event-sheet>
+        <event-sheet order="34">Controls</event-sheet>
+        <event-sheet order="35">Chamber9Events</event-sheet>
+        <event-sheet order="37">MainMenuEvents</event-sheet>
+        <event-sheet order="39">TestLevelEvents</event-sheet>
+        <event-sheet order="40">DemoEvents</event-sheet>
+        <event-sheet order="43">ChamberSpecial6Events</event-sheet>
+        <event-sheet order="44">Chamber13Events</event-sheet>
+    </open-tabs>
+    <properties>
+        <property expanded="1" name="About" />
+        <property expanded="1" name="Project settings" />
+        <property expanded="0" name="Window Size" />
+        <property expanded="1" name="Configuration Settings" />
+    </properties>
+    <families-expanded root="1" />
+    <folders-expanded>
+        <folder expanded="1" path="object-folder/" />
+        <folder expanded="1" path="layout-folder/" />
+        <folder expanded="1" path="layout-folder/Chambers1-6/" />
+        <folder expanded="1" path="layout-folder/Chambers7-12/" />
+        <folder expanded="1" path="layout-folder/Chambers13-18/" />
+        <folder expanded="1" path="layout-folder/Chambers19-24/" />
+        <folder expanded="1" path="layout-folder/SpecialChambers/" />
+        <folder expanded="1" path="event-folder/" />
+        <folder expanded="1" path="event-folder/Chambers 1-6/" />
+        <folder expanded="1" path="event-folder/Chambers 7-12/" />
+        <folder expanded="1" path="event-folder/Chambers13-18/" />
+        <folder expanded="1" path="event-folder/Chambers19-24/" />
+        <folder expanded="1" path="file-folder/" />
+        <folder expanded="1" path="sound-folder/" />
+        <folder expanded="1" path="music-folder/" />
+        <folder expanded="0" path="file-folder/Icons/" />
+        <folder expanded="1" path="animation-folder/WaffleLover/" />
+        <folder expanded="1" path="animation-folder/HealthBar/" />
+        <folder expanded="1" path="animation-folder/Lazer_large/" />
+        <folder expanded="1" path="animation-folder/Sky_Light/" />
+        <folder expanded="1" path="animation-folder/Tower/" />
+        <folder expanded="1" path="animation-folder/Tower1/" />
+        <folder expanded="1" path="animation-folder/FadeEffect/" />
+        <folder expanded="1" path="animation-folder/Chamber_text/" />
+        <folder expanded="1" path="animation-folder/Sprite/" />
+        <folder expanded="1" path="animation-folder/Sprite2/" />
+        <folder expanded="1" path="animation-folder/Sprite3/" />
+        <folder expanded="1" path="animation-folder/MovingPlatform/" />
+        <folder expanded="1" path="animation-folder/Glider/" />
+        <folder expanded="1" path="animation-folder/Lazar_large_moving/" />
+        <folder expanded="1" path="animation-folder/TitleScreenCamera/" />
+        <folder expanded="1" path="animation-folder/PressEnterText/" />
+        <folder expanded="1" path="animation-folder/ExitDoor/" />
+        <folder expanded="1" path="animation-folder/Sky_sunset/" />
+        <folder expanded="1" path="animation-folder/Sky_dark/" />
+        <folder expanded="1" path="animation-folder/Snow/" />
+        <folder expanded="1" path="animation-folder/Sprite4/" />
+        <folder expanded="1" path="animation-folder/ChamberSelectButton_add/" />
+        <folder expanded="1" path="animation-folder/ChamberSelectButton_subtract/" />
+        <folder expanded="1" path="animation-folder/SoundTestButton_add/" />
+        <folder expanded="1" path="animation-folder/SoundTestButton_subtract/" />
+        <folder expanded="1" path="animation-folder/Transporter/" />
+        <folder expanded="1" path="animation-folder/Transporter_moveupTrigger/" />
+        <folder expanded="1" path="animation-folder/Transporter_moveleftTrigger/" />
+        <folder expanded="1" path="animation-folder/Transporter_stopTrigger/" />
+        <folder expanded="1" path="animation-folder/MetalRamp/" />
+        <folder expanded="1" path="animation-folder/MetalRampTrigger1/" />
+        <folder expanded="1" path="animation-folder/MetalRampTrigger2/" />
+        <folder expanded="1" path="animation-folder/MetalSphere/" />
+        <folder expanded="1" path="animation-folder/Boss1Trigger1/" />
+        <folder expanded="1" path="animation-folder/Boss1Trigger2/" />
+        <folder expanded="1" path="animation-folder/Sprite5/" />
+        <folder expanded="1" path="animation-folder/DarkEffect/" />
+        <folder expanded="1" path="animation-folder/BouncePad/" />
+        <folder expanded="1" path="animation-folder/LockedDoor_Green_Ceiling/" />
+        <folder expanded="1" path="animation-folder/LockedDoorButton_green_ceiling/" />
+        <folder expanded="1" path="animation-folder/howthefuckdoijump/" />
+        <folder expanded="1" path="animation-folder/MainMenuBG/" />
+        <folder expanded="1" path="animation-folder/NewGameButton/" />
+        <folder expanded="1" path="animation-folder/LoadGameButton/" />
+        <folder expanded="1" path="animation-folder/Sprite6/" />
+        <folder expanded="1" path="animation-folder/Transporter_movedownTrigger/" />
+        <folder expanded="1" path="animation-folder/Transporter_moverightTrigger/" />
+        <folder expanded="1" path="animation-folder/WaffleLoverCutsceneTrigger_MoveRight/" />
+        <folder expanded="1" path="animation-folder/WaffleLoverCutsceneTrigger_Jump/" />
+        <folder expanded="1" path="animation-folder/WaffleLoverCutsceneTrigger_MoveLeft/" />
+        <folder expanded="1" path="animation-folder/WaffleLoverCutsceneTrrigger_Slide/" />
+        <folder expanded="1" path="animation-folder/MovingPlatform_manuel/" />
+        <folder expanded="1" path="animation-folder/HealthBar_Item/" />
+        <folder expanded="1" path="animation-folder/WaffleLover_ItemMask/" />
+        <folder expanded="1" path="animation-folder/WaffleLover_ItemMask/Stuff/" />
+        <folder expanded="1" path="animation-folder/WaffleLover_ItemMask/Sword/" />
+        <folder expanded="1" path="animation-folder/Mech/" />
+        <folder expanded="1" path="animation-folder/SelfDestructBomb/" />
+        <folder expanded="1" path="animation-folder/SelfDestructBomb_Trigger/" />
+        <folder expanded="1" path="animation-folder/textbox/" />
+        <folder expanded="1" path="animation-folder/ScoreGot/" />
+        <folder expanded="1" path="animation-folder/ExplorationScoreTrigger/" />
+    </folders-expanded>
+</c2uistate>

@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>DemoEvents</name>
+    <events>
+        <include>Controls</include>
+        <event-block sid="4759003643149712">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="897060174640182" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="2084991157885897" type="System">
+                    <param id="0" name="Variable">ChamberNumber</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action behavior="Platform" id="0" name="Set ignoring input" sid="700975681828326" type="WaffleLover">
+                    <param id="0" name="Input">1</param>
+                </action>
+                <action id="0" name="Play" sid="7489070231710526" type="Audio">
+                    <param id="0" name="Audio file">Walkin Sonic Crackers</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">-10</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="7740539989056214" type="System">
+                    <param id="0" name="Seconds">3.0</param>
+                </action>
+                <action id="4" name="Set animation" sid="1646460350596661" type="FadeEffect">
+                    <param id="0" name="Animation">&quot;FadeOut&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action behavior="Fade" id="1" name="Start fade" sid="9823793115468265" type="Chamber_text" />
+                <action behavior="Fade" id="1" name="Start fade" sid="7355349181832311" type="ChamberNumber" />
+                <action id="-16" name="Wait" sid="1534817437253965" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action behavior="Platform" id="0" name="Set ignoring input" sid="3071382448110495" type="WaffleLover">
+                    <param id="0" name="Input">0</param>
+                </action>
+                <action id="-10" name="Set value" sid="8695609503119354" type="WaffleLover">
+                    <param id="0" name="Instance variable">CutsceneMode</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4469948454614898">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="5594390615359357" type="Keyboard">
+                    <param id="0" name="Key">13 (Return)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="ScrollTo" id="1" name="Set enabled" sid="8762800812109239" type="WaffleLover">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="-16" name="Wait" sid="9118265788017991" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action id="4" name="Set animation" sid="1617120082923961" type="FadeEffect">
+                    <param id="0" name="Animation">&quot;FadeIn&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="9836185841194935" type="System">
+                    <param id="0" name="Seconds">1.0</param>
+                </action>
+                <action id="33" name="Stop all" sid="9240827952298086" type="Audio" />
+                <action id="-2" name="Go to layout" sid="6004782740508284" type="System">
+                    <param id="0" name="Layout">TitleScreen</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

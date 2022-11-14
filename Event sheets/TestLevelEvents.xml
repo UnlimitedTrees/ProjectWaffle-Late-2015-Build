@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>TestLevelEvents</name>
+    <events>
+        <include>Controls</include>
+        <event-block sid="8753513771456008">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="3579406763228922" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="9457622000076459" type="System">
+                    <param id="0" name="Variable">ChamberNumber</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-36" name="Save" sid="227400249653407" type="System">
+                    <param id="0" name="Slot">&quot;savefile1&quot;</param>
+                </action>
+                <action behavior="Platform" id="0" name="Set ignoring input" sid="3212767850940349" type="WaffleLover">
+                    <param id="0" name="Input">1</param>
+                </action>
+                <action id="0" name="Play" sid="2648601128885323" type="Audio">
+                    <param id="0" name="Audio file">Space Queens Sonic X-Treme</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">-10</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="3120023887417288" type="System">
+                    <param id="0" name="Seconds">3.0</param>
+                </action>
+                <action id="4" name="Set animation" sid="6815471466310527" type="FadeEffect">
+                    <param id="0" name="Animation">&quot;FadeOut&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action behavior="Fade" id="1" name="Start fade" sid="1995798179067717" type="Chamber_text" />
+                <action behavior="Fade" id="1" name="Start fade" sid="541054878474868" type="ChamberNumber" />
+                <action id="-16" name="Wait" sid="7818918243798964" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action behavior="Platform" id="0" name="Set ignoring input" sid="6672551021252934" type="WaffleLover">
+                    <param id="0" name="Input">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9600763846560742">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="9316080681373111" type="WaffleLover">
+                    <param id="0" name="Object">SelfDestructBomb_Trigger</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="ScrollTo" id="1" name="Set enabled" sid="1950332748616773" type="WaffleLover">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="-10" name="Set value" sid="5828645292505861" type="DeathBlock">
+                    <param id="0" name="Instance variable">Active</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="4" name="Set animation" sid="7280789171644695" type="SelfDestructBomb">
+                    <param id="0" name="Animation">&quot;Activated&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-10" name="Set value" sid="6037161952686418" type="WaffleLover">
+                    <param id="0" name="Instance variable">CutsceneMode</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-10" name="Set value" sid="9569931959981507" type="WaffleLover">
+                    <param id="0" name="Instance variable">MoveLeft</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-10" name="Set value" sid="5336128465855384" type="WaffleLover">
+                    <param id="0" name="Instance variable">MoveRight</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="33" name="Stop all" sid="4818906188315883" type="Audio" />
+                <action id="0" name="Play" sid="2928673201096334" type="Audio">
+                    <param id="0" name="Audio file">Explosion1</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="4060847203936794" type="System">
+                    <param id="0" name="Seconds">1.5</param>
+                </action>
+                <action id="4" name="Set animation" sid="609851758472038" type="FadeEffect">
+                    <param id="0" name="Animation">&quot;FadeIn_White&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="8576528085981228" type="System">
+                    <param id="0" name="Seconds">1.5</param>
+                </action>
+                <action id="33" name="Stop all" sid="6675746067533861" type="Audio" />
+                <action id="0" name="Play" sid="4870772133940308" type="Audio">
+                    <param id="0" name="Audio file">Act Cleared Sonic 2</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="3255202611865499" type="System">
+                    <param id="0" name="Seconds">8.0</param>
+                </action>
+                <action id="-10" name="Add to" sid="2727132419537504" type="System">
+                    <param id="0" name="Variable">ChamberNumber</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="1626237592252945" type="System">
+                    <param id="0" name="Layout">Chamber2</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Chamber6Events</name>
+    <events>
+        <include>Controls</include>
+        <event-block sid="9078477853836166">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="6353311329388393" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="37996839791933" type="System">
+                    <param id="0" name="Variable">ChamberNumber</param>
+                    <param id="1" name="Value">6</param>
+                </action>
+                <action id="-36" name="Save" sid="7385272063141612" type="System">
+                    <param id="0" name="Slot">&quot;savefile1&quot;</param>
+                </action>
+                <action behavior="Platform" id="0" name="Set ignoring input" sid="8181761177519385" type="WaffleLover">
+                    <param id="0" name="Input">1</param>
+                </action>
+                <action id="0" name="Play" sid="2170873555107715" type="Audio">
+                    <param id="0" name="Audio file">Boss Theme 2 Sonic3DBlast</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">-10</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="9263865441809769" type="System">
+                    <param id="0" name="Seconds">3.0</param>
+                </action>
+                <action id="4" name="Set animation" sid="9068909281553761" type="FadeEffect">
+                    <param id="0" name="Animation">&quot;FadeOut&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action behavior="Fade" id="1" name="Start fade" sid="9028470706183902" type="Chamber_text" />
+                <action behavior="Fade" id="1" name="Start fade" sid="735401651852418" type="ChamberNumber" />
+                <action id="-16" name="Wait" sid="9510983264667863" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action behavior="Platform" id="0" name="Set ignoring input" sid="5059452222239937" type="WaffleLover">
+                    <param id="0" name="Input">0</param>
+                </action>
+                <action id="-16" name="Wait" sid="7614494609695345" type="System">
+                    <param id="0" name="Seconds">1.0</param>
+                </action>
+                <action id="-10" name="Set value" sid="1774136588464496" type="MetalSphere">
+                    <param id="0" name="Instance variable">Move</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action behavior="Platform" id="7" name="Simulate control" sid="4860078763243422" type="MetalSphere">
+                    <param id="0" name="Control">2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="9766629756843819" title="Boss1Events">
+            <sub-events>
+                <event-block sid="2227374218148593">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="1650170890638516" type="System" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="5583628522115566">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="5646403607183806" type="MetalSphere">
+                                    <param id="0" name="Instance variable">Move</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="7" name="Simulate control" sid="1948468436228477" type="MetalSphere">
+                                    <param id="0" name="Control">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="8854191982524846">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="5973042094932505" type="MetalSphere">
+                                    <param id="0" name="Instance variable">Move</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="7" name="Simulate control" sid="3751440303796835" type="MetalSphere">
+                                    <param id="0" name="Control">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="2591082582843826">
+                    <conditions>
+                        <condition behavior="Platform" id="9" name="On landed" sid="7826371689195948" type="MetalSphere" />
+                        <condition id="-7" name="Compare instance variable" sid="1195883739648419" type="MetalSphere">
+                            <param id="0" name="Instance variable">Move</param>
+                            <param id="1" name="Comparison">1</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="5910644307132005" type="MetalSphere">
+                            <param id="0" name="Control">2</param>
+                        </action>
+                        <action behavior="Rotate" id="0" name="Set speed" sid="2584946024567174" type="MetalSphere">
+                            <param id="0" name="Speed">180</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5583696105358735">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="9699599105947373" type="MetalSphere">
+                            <param id="0" name="Object">Boss1Trigger1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="6001566335169335" type="MetalSphere">
+                            <param id="0" name="Instance variable">Move</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8787065625896789">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="2970986576362614" type="MetalSphere">
+                            <param id="0" name="Object">Boss1Trigger2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="7482560520952891" type="MetalSphere">
+                            <param id="0" name="Instance variable">Move</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5479479905673291">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="4900922561422639" type="WaffleLover">
+                            <param id="0" name="Object">MetalSphere</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="3618474822319215" type="MetalSphere">
+                            <param id="0" name="Instance variable">Move</param>
+                            <param id="1" name="Comparison">1</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition behavior="Flash" id="0" inverted="1" name="Is flashing" sid="6034115839884849" type="WaffleLover" />
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Subtract from" sid="1768323244893773" type="WaffleLover">
+                            <param id="0" name="Instance variable">Health</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="3914087554493661" type="Audio">
+                            <param id="0" name="Audio file">Hit</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action behavior="Flash" id="0" name="Flash" sid="4471707145613117" type="WaffleLover">
+                            <param id="0" name="&apos;On&apos; time">0.1</param>
+                            <param id="1" name="&apos;Off&apos; time">0.1</param>
+                            <param id="2" name="Duration">2.0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

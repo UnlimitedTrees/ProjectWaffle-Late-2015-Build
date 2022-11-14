@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>TitleEvents</name>
+    <events>
+        <event-block sid="2358198055828492">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="5514375437632775" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="6653498252061168" type="Audio">
+                    <param id="0" name="Audio file">Opening Sonic3DBlast</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="2758798064351092" type="System">
+                    <param id="0" name="Seconds">3.5</param>
+                </action>
+                <action id="4" name="Set animation" sid="9481705862600574" type="FadeEffect">
+                    <param id="0" name="Animation">&quot;FadeOut&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-10" name="Set value" sid="2704344203115265" type="TitleScreenCamera">
+                    <param id="0" name="Instance variable">Move</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3699127129146074">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="9263667844414763" type="System" />
+                <condition id="-7" name="Compare instance variable" sid="2701250336167595" type="TitleScreenCamera">
+                    <param id="0" name="Instance variable">Move</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="8Direction" id="7" name="Simulate control" sid="4579730748989785" type="TitleScreenCamera">
+                    <param id="0" name="Control">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4297427054696541">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="463613285247799" type="Keyboard">
+                    <param id="0" name="Key">13 (Return)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="6657931581404867" type="FadeEffect">
+                    <param id="0" name="Animation">&quot;FadeIn&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="8709210590769368" type="System">
+                    <param id="0" name="Seconds">1.0</param>
+                </action>
+                <action id="33" name="Stop all" sid="3073562983719041" type="Audio" />
+                <action id="-2" name="Go to layout" sid="1129636065305161" type="System">
+                    <param id="0" name="Layout">MainMenu</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5376759066996339">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="8849184068424853" type="Keyboard">
+                    <param id="0" name="Key">9 (Tab)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="33" name="Stop all" sid="933035407048432" type="Audio" />
+                <action id="-2" name="Go to layout" sid="3374954605721363" type="System">
+                    <param id="0" name="Layout">LevelSelect</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4172137571585926">
+            <conditions>
+                <condition id="-4" name="Is outside layout" sid="7716669560049876" type="TitleScreenCamera" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="1388495048471942" type="TitleScreenCamera" />
+            </actions>
+        </event-block>
+        <event-block sid="4836082043251714">
+            <conditions>
+                <condition id="-19" name="On destroyed" sid="3459961693253007" type="TitleScreenCamera" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="6919288759880875" type="FadeEffect">
+                    <param id="0" name="Animation">&quot;FadeIn&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="2118463644237412" type="System">
+                    <param id="0" name="Seconds">1.0</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="3990754259351342" type="System">
+                    <param id="0" name="Layout">Demo</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Chamber9Events</name>
+    <events>
+        <include>Controls</include>
+        <event-block sid="8174163189022148">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="1904872383485247" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="7799034276630262" type="System">
+                    <param id="0" name="Variable">ChamberNumber</param>
+                    <param id="1" name="Value">9</param>
+                </action>
+                <action id="-36" name="Save" sid="5344969941687129" type="System">
+                    <param id="0" name="Slot">&quot;savefile1&quot;</param>
+                </action>
+                <action behavior="Platform" id="0" name="Set ignoring input" sid="7708634018493108" type="WaffleLover">
+                    <param id="0" name="Input">1</param>
+                </action>
+                <action id="0" name="Play" sid="8751082773850835" type="Audio">
+                    <param id="0" name="Audio file">Gust Planet 2 STNL</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">-10</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="8683976995855626" type="System">
+                    <param id="0" name="Seconds">3.0</param>
+                </action>
+                <action id="4" name="Set animation" sid="1541907844635044" type="FadeEffect">
+                    <param id="0" name="Animation">&quot;FadeOut&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action behavior="Fade" id="1" name="Start fade" sid="945437390910299" type="Chamber_text" />
+                <action behavior="Fade" id="1" name="Start fade" sid="7218771793788607" type="ChamberNumber" />
+                <action id="-16" name="Wait" sid="4023578625065666" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action behavior="Platform" id="0" name="Set ignoring input" sid="248057292654698" type="WaffleLover">
+                    <param id="0" name="Input">0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

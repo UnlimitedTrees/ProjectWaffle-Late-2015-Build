@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Chamber24Events</name>
+    <events>
+        <include>Controls</include>
+        <event-block sid="8047702131293851">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="8653215948071413" type="System" />
+            </conditions>
+            <actions>
+                <action id="-24" name="Move to top" sid="2753771168728602" type="DarkEffect" />
+                <action id="4" name="Set animation" sid="6739617179624939" type="DarkEffect">
+                    <param id="0" name="Animation">&quot;active&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="6753536244683977" type="System">
+                    <param id="0" name="Variable">ChamberNumber</param>
+                    <param id="1" name="Value">24</param>
+                </action>
+                <action id="-36" name="Save" sid="4355876402641903" type="System">
+                    <param id="0" name="Slot">&quot;savefile1&quot;</param>
+                </action>
+                <action behavior="Platform" id="0" name="Set ignoring input" sid="2171728227778394" type="WaffleLover">
+                    <param id="0" name="Input">1</param>
+                </action>
+                <action id="0" name="Play" sid="6417381258943599" type="Audio">
+                    <param id="0" name="Audio file">Metallic Madness Past Sonic CD</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">-10</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="4911141148171459" type="System">
+                    <param id="0" name="Seconds">3.0</param>
+                </action>
+                <action id="4" name="Set animation" sid="2369422843480941" type="FadeEffect">
+                    <param id="0" name="Animation">&quot;FadeOut&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action behavior="Fade" id="1" name="Start fade" sid="3188516873495609" type="Chamber_text" />
+                <action behavior="Fade" id="1" name="Start fade" sid="5434130783368513" type="ChamberNumber" />
+                <action id="-16" name="Wait" sid="8144801753407332" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action behavior="Platform" id="0" name="Set ignoring input" sid="7907979029482323" type="WaffleLover">
+                    <param id="0" name="Input">0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

@@ -1,0 +1,1011 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>LevelSelectEvents</name>
+    <events>
+        <event-block sid="7689580040020977">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="1104665542611618" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="4986928619202875" type="ChamberSelectFont">
+                    <param id="0" name="Text">&quot;CHAMBER&quot; &amp; ChamberSelectFont.Chamber</param>
+                </action>
+                <action id="0" name="Set text" sid="8864205246928962" type="SoundTestFont">
+                    <param id="0" name="Text">&quot;SOUND TEST:&quot; &amp; SoundTestFont.Sound</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2762979647923206">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="8672804964964612" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="9923900302741781" type="Audio">
+                    <param id="0" name="Audio file">Data Select Screen Sonic3</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2461398938523598">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="5140511221318348" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">ChamberSelectButton_add</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Add to" sid="8542303404605897" type="ChamberSelectFont">
+                    <param id="0" name="Instance variable">Chamber</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9132811140126032">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="4706120305945864" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">ChamberSelectButton_subtract</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-12" name="Subtract from" sid="6309295796601312" type="ChamberSelectFont">
+                    <param id="0" name="Instance variable">Chamber</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8415520501743911">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="8789077829658844" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">SoundTestButton_add</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Add to" sid="561380342141419" type="SoundTestFont">
+                    <param id="0" name="Instance variable">Sound</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3227932167517739">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="1448309675063818" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">SoundTestButton_subtract</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-12" name="Subtract from" sid="6357667135049843" type="SoundTestFont">
+                    <param id="0" name="Instance variable">Sound</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="fookin cheater" sid="4856610534414475" title="ChamberSelect">
+            <sub-events>
+                <event-block sid="7139899477614353">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="6658438513472169" type="Keyboard">
+                            <param id="0" name="Key">13 (Return)</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="7275423440321121" type="ChamberSelectFont">
+                            <param id="0" name="Instance variable">Chamber</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="33" name="Stop all" sid="5944257377600463" type="Audio" />
+                        <action id="-2" name="Go to layout" sid="1085898951828706" type="System">
+                            <param id="0" name="Layout">Demo</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1925860859159544">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="2351900020998314" type="Keyboard">
+                            <param id="0" name="Key">13 (Return)</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="1088027453663861" type="ChamberSelectFont">
+                            <param id="0" name="Instance variable">Chamber</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="33" name="Stop all" sid="1513647016534495" type="Audio" />
+                        <action id="-2" name="Go to layout" sid="7138173299142235" type="System">
+                            <param id="0" name="Layout">Chamber1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9148392516760434">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="827810103084716" type="Keyboard">
+                            <param id="0" name="Key">13 (Return)</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="3789684893170222" type="ChamberSelectFont">
+                            <param id="0" name="Instance variable">Chamber</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="33" name="Stop all" sid="2174250198178728" type="Audio" />
+                        <action id="-2" name="Go to layout" sid="6773209799860118" type="System">
+                            <param id="0" name="Layout">Chamber2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5390469951623456">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="7312372195811795" type="Keyboard">
+                            <param id="0" name="Key">13 (Return)</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="2191961942714886" type="ChamberSelectFont">
+                            <param id="0" name="Instance variable">Chamber</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="33" name="Stop all" sid="3215246241036956" type="Audio" />
+                        <action id="-2" name="Go to layout" sid="7031307705311414" type="System">
+                            <param id="0" name="Layout">Chamber3</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5029819332308546">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="6222655702997789" type="Keyboard">
+                            <param id="0" name="Key">13 (Return)</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="5967012694743427" type="ChamberSelectFont">
+                            <param id="0" name="Instance variable">Chamber</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="33" name="Stop all" sid="8082409456932725" type="Audio" />
+                        <action id="-2" name="Go to layout" sid="7506857323465657" type="System">
+                            <param id="0" name="Layout">Chamber4</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4409475147173482">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="3842217747327743" type="Keyboard">
+                            <param id="0" name="Key">13 (Return)</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="6408777981655928" type="ChamberSelectFont">
+                            <param id="0" name="Instance variable">Chamber</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">5</param>
+                        </condition>
+                        <condition id="-7" inverted="1" name="Compare instance variable" sid="2679258405071548" type="SoundTestFont">
+                            <param id="0" name="Instance variable">Sound</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">9</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="33" name="Stop all" sid="4007306730159889" type="Audio" />
+                        <action id="-2" name="Go to layout" sid="3594238143128611" type="System">
+                            <param id="0" name="Layout">Chamber5</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4018908274354405">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="4286241744437483" type="Keyboard">
+                            <param id="0" name="Key">13 (Return)</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="3575286184833255" type="ChamberSelectFont">
+                            <param id="0" name="Instance variable">Chamber</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="33" name="Stop all" sid="8600735025377146" type="Audio" />
+                        <action id="-2" name="Go to layout" sid="5837388528230213" type="System">
+                            <param id="0" name="Layout">Chamber6</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7124947591098429">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="3638596071916447" type="Keyboard">
+                            <param id="0" name="Key">13 (Return)</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="8895667118289421" type="ChamberSelectFont">
+                            <param id="0" name="Instance variable">Chamber</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">25</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="7681757332502382" type="SoundTestFont">
+                            <param id="0" name="Instance variable">Sound</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="33" name="Stop all" sid="8291873267096034" type="Audio" />
+                        <action id="-2" name="Go to layout" sid="1185372955016042" type="System">
+                            <param id="0" name="Layout">ChamberSpecial1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3627182900664803">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="8108671240302172" type="Keyboard">
+                            <param id="0" name="Key">13 (Return)</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="5893261198153136" type="ChamberSelectFont">
+                            <param id="0" name="Instance variable">Chamber</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">7</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="33" name="Stop all" sid="1614111995897312" type="Audio" />
+                        <action id="-2" name="Go to layout" sid="7995872111075479" type="System">
+                            <param id="0" name="Layout">Chamber7</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="670742590459847">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="4616684634416427" type="Keyboard">
+                            <param id="0" name="Key">13 (Return)</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="8992990069248078" type="ChamberSelectFont">
+                            <param id="0" name="Instance variable">Chamber</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">8</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="33" name="Stop all" sid="6380369414426306" type="Audio" />
+                        <action id="-2" name="Go to layout" sid="6592228836169312" type="System">
+                            <param id="0" name="Layout">Chamber8</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8996768493201534">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="2040217649147666" type="Keyboard">
+                            <param id="0" name="Key">13 (Return)</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="7439659760487379" type="ChamberSelectFont">
+                            <param id="0" name="Instance variable">Chamber</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">9</param>
+                        </condition>
+                        <condition id="-7" inverted="1" name="Compare instance variable" sid="8986279321615192" type="SoundTestFont">
+                            <param id="0" name="Instance variable">Sound</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">11</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="33" name="Stop all" sid="4749312954285059" type="Audio" />
+                        <action id="-2" name="Go to layout" sid="7715085648752676" type="System">
+                            <param id="0" name="Layout">Chamber9</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8130923559915961">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="4256028933253334" type="Keyboard">
+                            <param id="0" name="Key">13 (Return)</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="5704477977767453" type="ChamberSelectFont">
+                            <param id="0" name="Instance variable">Chamber</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">13</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="33" name="Stop all" sid="2690287047607935" type="Audio" />
+                        <action id="-2" name="Go to layout" sid="9202484993715764" type="System">
+                            <param id="0" name="Layout">Chamber13</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6907420553378989">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="4836829408475243" type="Keyboard">
+                            <param id="0" name="Key">13 (Return)</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="3452936355725442" type="ChamberSelectFont">
+                            <param id="0" name="Instance variable">Chamber</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">14</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="33" name="Stop all" sid="508682538413273" type="Audio" />
+                        <action id="-2" name="Go to layout" sid="2775898556603326" type="System">
+                            <param id="0" name="Layout">Chamber14</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2343307629136825">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="550181943007807" type="Keyboard">
+                            <param id="0" name="Key">13 (Return)</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="4388238506124606" type="ChamberSelectFont">
+                            <param id="0" name="Instance variable">Chamber</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">15</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="33" name="Stop all" sid="8085517851992613" type="Audio" />
+                        <action id="-2" name="Go to layout" sid="4799081929783792" type="System">
+                            <param id="0" name="Layout">Chamber15</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7545529780277166">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="611116460708715" type="Keyboard">
+                            <param id="0" name="Key">13 (Return)</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="501529218320915" type="ChamberSelectFont">
+                            <param id="0" name="Instance variable">Chamber</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">23</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="33" name="Stop all" sid="3694065094067852" type="Audio" />
+                        <action id="-2" name="Go to layout" sid="2530034337726338" type="System">
+                            <param id="0" name="Layout">Chamber23</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8102522262163759">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="488722131822705" type="Keyboard">
+                            <param id="0" name="Key">13 (Return)</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="6290764778663484" type="ChamberSelectFont">
+                            <param id="0" name="Instance variable">Chamber</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">5</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="5176177174690916" type="SoundTestFont">
+                            <param id="0" name="Instance variable">Sound</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">9</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="33" name="Stop all" sid="4031113790342637" type="Audio" />
+                        <action id="-2" name="Go to layout" sid="2534965154423073" type="System">
+                            <param id="0" name="Layout">Chamber24G</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="791980906927965">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="2260170208610141" type="Keyboard">
+                            <param id="0" name="Key">13 (Return)</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="3443775975703678" type="ChamberSelectFont">
+                            <param id="0" name="Instance variable">Chamber</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">24</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="33" name="Stop all" sid="3742767882025018" type="Audio" />
+                        <action id="-2" name="Go to layout" sid="7576965368442715" type="System">
+                            <param id="0" name="Layout">Chamber24</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1320692691065159">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="4326763058096518" type="Keyboard">
+                            <param id="0" name="Key">13 (Return)</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="2032099553938413" type="ChamberSelectFont">
+                            <param id="0" name="Instance variable">Chamber</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">9</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="1391808514612854" type="SoundTestFont">
+                            <param id="0" name="Instance variable">Sound</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">11</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="33" name="Stop all" sid="9481930590540194" type="Audio" />
+                        <action id="-2" name="Go to layout" sid="6513332614160696" type="System">
+                            <param id="0" name="Layout">TestLevel</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="i heard you liked music. These events allow you to listen to all the music/sounds used. Even sounds and music that haven&apos;t appeared in a level yet can be listened to" sid="6379928180624888" title="SoundTest">
+            <sub-events>
+                <event-block sid="4963743807595546">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="4834239473977683" type="Keyboard">
+                            <param id="0" name="Key">74 (J)</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="9419481848819634" type="SoundTestFont">
+                            <param id="0" name="Instance variable">Sound</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="33" name="Stop all" sid="9810469905296554" type="Audio" />
+                    </actions>
+                </event-block>
+                <event-block sid="692704810721138">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="349363320154238" type="Keyboard">
+                            <param id="0" name="Key">74 (J)</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="5137062863059324" type="SoundTestFont">
+                            <param id="0" name="Instance variable">Sound</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="33" name="Stop all" sid="4604572443744808" type="Audio" />
+                        <action id="0" name="Play" sid="1550187244950777" type="Audio">
+                            <param id="0" name="Audio file">Walkin Sonic Crackers</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8952830634340081">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="3513303473157777" type="Keyboard">
+                            <param id="0" name="Key">74 (J)</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="5501064137396594" type="SoundTestFont">
+                            <param id="0" name="Instance variable">Sound</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="33" name="Stop all" sid="667590278239531" type="Audio" />
+                        <action id="0" name="Play" sid="3840391577163864" type="Audio">
+                            <param id="0" name="Audio file">Gene Gadget Zone Act 2</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5839027826903445">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="9868983097975307" type="Keyboard">
+                            <param id="0" name="Key">74 (J)</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="6229500172673165" type="SoundTestFont">
+                            <param id="0" name="Instance variable">Sound</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="33" name="Stop all" sid="683246915401203" type="Audio" />
+                        <action id="0" name="Play" sid="2306522106911554" type="Audio">
+                            <param id="0" name="Audio file">EndlessMine Sonic3</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1767267338605986">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="7796306884131391" type="Keyboard">
+                            <param id="0" name="Key">74 (J)</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="9789753438882875" type="SoundTestFont">
+                            <param id="0" name="Instance variable">Sound</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="33" name="Stop all" sid="3732662946116489" type="Audio" />
+                        <action id="0" name="Play" sid="5523497783897791" type="Audio">
+                            <param id="0" name="Audio file">Panic Puppet 2 Sonic3DBlast</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7882145459088489">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="562581701806342" type="Keyboard">
+                            <param id="0" name="Key">74 (J)</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="4946025867072373" type="SoundTestFont">
+                            <param id="0" name="Instance variable">Sound</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="33" name="Stop all" sid="7432308758425603" type="Audio" />
+                        <action id="0" name="Play" sid="5331492240774169" type="Audio">
+                            <param id="0" name="Audio file">Diamond Dust 2 Sonic3DBlast</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9024573369376689">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="4312885312055971" type="Keyboard">
+                            <param id="0" name="Key">74 (J)</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="2829515189361487" type="SoundTestFont">
+                            <param id="0" name="Instance variable">Sound</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="33" name="Stop all" sid="6279363006366193" type="Audio" />
+                        <action id="0" name="Play" sid="2092772950312783" type="Audio">
+                            <param id="0" name="Audio file">Flying Battery 2 Sonic 3</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4285963026159874">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="190121287993998" type="Keyboard">
+                            <param id="0" name="Key">74 (J)</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="8970694864730637" type="SoundTestFont">
+                            <param id="0" name="Instance variable">Sound</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">7</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="33" name="Stop all" sid="4377281370748777" type="Audio" />
+                        <action id="0" name="Play" sid="9452754339196248" type="Audio">
+                            <param id="0" name="Audio file">Gust Planet 2 STNL</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9401145560889846">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="9154042647645059" type="Keyboard">
+                            <param id="0" name="Key">74 (J)</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="8226472477135752" type="SoundTestFont">
+                            <param id="0" name="Instance variable">Sound</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">8</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="33" name="Stop all" sid="3402116207913392" type="Audio" />
+                        <action id="0" name="Play" sid="5757740782015917" type="Audio">
+                            <param id="0" name="Audio file">Data Select Screen Sonic3</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2837284844199627">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="9852607029453975" type="Keyboard">
+                            <param id="0" name="Key">74 (J)</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="5078691750765737" type="SoundTestFont">
+                            <param id="0" name="Instance variable">Sound</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">9</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="33" name="Stop all" sid="8654575762624875" type="Audio" />
+                        <action id="0" name="Play" sid="1966942230399261" type="Audio">
+                            <param id="0" name="Audio file">Opening Sonic3DBlast</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="806964554421053">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="7843236076857831" type="Keyboard">
+                            <param id="0" name="Key">74 (J)</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="9586643911274957" type="SoundTestFont">
+                            <param id="0" name="Instance variable">Sound</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">10</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="33" name="Stop all" sid="9566831964609994" type="Audio" />
+                        <action id="0" name="Play" sid="7937887956525929" type="Audio">
+                            <param id="0" name="Audio file">Act Cleared Sonic 2</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3635533456421668">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="4941496214377303" type="Keyboard">
+                            <param id="0" name="Key">74 (J)</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="4385131375954254" type="SoundTestFont">
+                            <param id="0" name="Instance variable">Sound</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">11</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="33" name="Stop all" sid="5716534587117915" type="Audio" />
+                        <action id="0" name="Play" sid="7308934331539819" type="Audio">
+                            <param id="0" name="Audio file">Death</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8676737008640995">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="9088766498958726" type="Keyboard">
+                            <param id="0" name="Key">74 (J)</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="3283333406700278" type="SoundTestFont">
+                            <param id="0" name="Instance variable">Sound</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">12</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="33" name="Stop all" sid="4876233573834618" type="Audio" />
+                        <action id="0" name="Play" sid="1279134471175591" type="Audio">
+                            <param id="0" name="Audio file">Explosion1</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4630111274917728">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="6974709658370217" type="Keyboard">
+                            <param id="0" name="Key">74 (J)</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="3586268439022621" type="SoundTestFont">
+                            <param id="0" name="Instance variable">Sound</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">13</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="33" name="Stop all" sid="622182102730707" type="Audio" />
+                        <action id="0" name="Play" sid="443561185182593" type="Audio">
+                            <param id="0" name="Audio file">Explosion2</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2202344714894622">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="94208780595484" type="Keyboard">
+                            <param id="0" name="Key">74 (J)</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="6250973914279129" type="SoundTestFont">
+                            <param id="0" name="Instance variable">Sound</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">14</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="33" name="Stop all" sid="1672610764651444" type="Audio" />
+                        <action id="0" name="Play" sid="6464877609988973" type="Audio">
+                            <param id="0" name="Audio file">Hit</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8364640060600163">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="8621136396773408" type="Keyboard">
+                            <param id="0" name="Key">74 (J)</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="7079178516674473" type="SoundTestFont">
+                            <param id="0" name="Instance variable">Sound</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">15</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="33" name="Stop all" sid="4194517402088032" type="Audio" />
+                        <action id="0" name="Play" sid="4119195877408069" type="Audio">
+                            <param id="0" name="Audio file">jumpsound</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3021623050542764">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="4992102813743754" type="Keyboard">
+                            <param id="0" name="Key">74 (J)</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="1281765803883568" type="SoundTestFont">
+                            <param id="0" name="Instance variable">Sound</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">16</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="33" name="Stop all" sid="9734994185771551" type="Audio" />
+                        <action id="0" name="Play" sid="7949384394655314" type="Audio">
+                            <param id="0" name="Audio file">Lazer</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1228914416865277">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="1087291397665833" type="Keyboard">
+                            <param id="0" name="Key">74 (J)</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="651051102009713" type="SoundTestFont">
+                            <param id="0" name="Instance variable">Sound</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">17</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="33" name="Stop all" sid="5293288276284074" type="Audio" />
+                        <action id="0" name="Play" sid="3204399173440326" type="Audio">
+                            <param id="0" name="Audio file">Motor</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9007669902281999">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="3732330996028005" type="Keyboard">
+                            <param id="0" name="Key">74 (J)</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="1206652673137334" type="SoundTestFont">
+                            <param id="0" name="Instance variable">Sound</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">18</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="33" name="Stop all" sid="2498519007694722" type="Audio" />
+                        <action id="0" name="Play" sid="3298065141350834" type="Audio">
+                            <param id="0" name="Audio file">ShockingSound</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="708764543500542">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="6310361534676475" type="Keyboard">
+                            <param id="0" name="Key">74 (J)</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="238181864095873" type="SoundTestFont">
+                            <param id="0" name="Instance variable">Sound</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">19</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="33" name="Stop all" sid="3391268348260597" type="Audio" />
+                        <action id="0" name="Play" sid="6619429461377873" type="Audio">
+                            <param id="0" name="Audio file">Shoot</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5609893332576818">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="9838746081565809" type="Keyboard">
+                            <param id="0" name="Key">74 (J)</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="8412694117286852" type="SoundTestFont">
+                            <param id="0" name="Instance variable">Sound</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">20</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="33" name="Stop all" sid="9250503488005505" type="Audio" />
+                        <action id="0" name="Play" sid="3256386434533999" type="Audio">
+                            <param id="0" name="Audio file">Static</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8015191587091542">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="1537759569790199" type="Keyboard">
+                            <param id="0" name="Key">74 (J)</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="6842538399730183" type="SoundTestFont">
+                            <param id="0" name="Instance variable">Sound</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">21</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="33" name="Stop all" sid="5843232817962505" type="Audio" />
+                        <action id="0" name="Play" sid="4710048118146126" type="Audio">
+                            <param id="0" name="Audio file">Casino Night Sonic 2 Beta</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8300918964250236">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="8452939510503507" type="Keyboard">
+                            <param id="0" name="Key">74 (J)</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="4613045213663555" type="SoundTestFont">
+                            <param id="0" name="Instance variable">Sound</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">22</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="33" name="Stop all" sid="6161563256216761" type="Audio" />
+                        <action id="0" name="Play" sid="8305416081182047" type="Audio">
+                            <param id="0" name="Audio file">Sky Base Sonic 1</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4391518630944294">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="4669253493708672" type="Keyboard">
+                            <param id="0" name="Key">74 (J)</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="2746181135501876" type="SoundTestFont">
+                            <param id="0" name="Instance variable">Sound</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">23</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="33" name="Stop all" sid="427113735823005" type="Audio" />
+                        <action id="0" name="Play" sid="4768746403892453" type="Audio">
+                            <param id="0" name="Audio file">Metallic Madness Past Sonic CD</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3166742484209599">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="4355946135104144" type="Keyboard">
+                            <param id="0" name="Key">74 (J)</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="9556236731437301" type="SoundTestFont">
+                            <param id="0" name="Instance variable">Sound</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">24</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="33" name="Stop all" sid="6299498089793272" type="Audio" />
+                        <action id="0" name="Play" sid="9296003832432925" type="Audio">
+                            <param id="0" name="Audio file">Metallic Madness Good Future Sonic CD</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5393023418958649">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="3346046068390783" type="Keyboard">
+                            <param id="0" name="Key">74 (J)</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="7729330028315415" type="SoundTestFont">
+                            <param id="0" name="Instance variable">Sound</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">25</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="33" name="Stop all" sid="5084262501159792" type="Audio" />
+                        <action id="0" name="Play" sid="1178022314963981" type="Audio">
+                            <param id="0" name="Audio file">Quartz Guadrant Past Sonic CD</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7497830208284332">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="5884081936394552" type="Keyboard">
+                            <param id="0" name="Key">74 (J)</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="3249232564014246" type="SoundTestFont">
+                            <param id="0" name="Instance variable">Sound</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">26</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="33" name="Stop all" sid="8272534560749138" type="Audio" />
+                        <action id="0" name="Play" sid="237097442017667" type="Audio">
+                            <param id="0" name="Audio file">Boss Theme 2 Sonic3DBlast</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>
